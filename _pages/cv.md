@@ -11,49 +11,40 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.A. in Computer Science and Neurosciene, Scripps College, 2021 (expected)
 
-Work experience
+Research experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 2019: Research Assistant
+  * University of Minnesota
+  * Classified fMRI patterns of activation from participants percieving color versus black-and-white stripes; determined best classifier 
+    for dataset in McCollough Effect project.
+  * Supervisor: Professor Stephen Engel
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Fall 2018: Research Assistant
+  * Leveraging the drift diffusion model to fit EEG data from a novel social decision making task.
+  * Supervisor: Professor Michael Spezio
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming
+  * MATLAB
+  * C++
+  * Python
+* Public speaking
 
-Publications
+# Conferences
+# ======
+#  <ul>{% for post in site.publications %}
+#    {% include archive-single-cv.html %}
+ # {% endfor %}</ul>
+
+Leadership and service
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Motley Coffeehouse
+  * Managed Scripps College’s primer collaboration space as a barista and facilities manager
+  * Planning remodel project to create better workspace efficiency and sustainable business practices
+
+* Girl Scouts of the USA, Ambassador
+  * Silver Award: Ran an Intro to Technology course at local senior center; taught basics like email and browsing
+  * Gold Award: Connected township athletics department with a local concussion doctor to facilitate better concussion and mental health education in the community
