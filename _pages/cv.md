@@ -22,6 +22,7 @@ Research experience
   * Supervisor: Professor Stephen Engel
 
 * Fall 2018: Research Assistant
+  * Scripps College
   * Leveraging the drift diffusion model to fit EEG data from a novel social decision making task.
   * Supervisor: Professor Michael Spezio
   
