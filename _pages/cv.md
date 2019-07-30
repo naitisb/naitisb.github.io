@@ -33,12 +33,6 @@ Skills
   * Python
 * Public speaking
 
-# Conferences
-# ======
-#  <ul>{% for post in site.publications %}
-#    {% include archive-single-cv.html %}
- # {% endfor %}</ul>
-
 Leadership and service
 ======
 * Motley Coffeehouse
