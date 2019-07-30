@@ -99,10 +99,10 @@ author:
   github           : "naitib"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "@naitisb"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/naiti/"
   orcid            : "https://orcid.org/0000-0002-9592-2483"
   pinterest        :
   soundcloud       :
@@ -176,16 +176,16 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
