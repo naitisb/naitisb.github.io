@@ -11,17 +11,17 @@ redirect_from:
 
 Education
 ======
-* B.A. in Computer Science and Neurosciene, Scripps College, 2021 (expected)
+* B.A. in Computer Science and Neuroscience, Scripps College, 2021 (expected)
 
 Research experience
 ======
-* Summer 2019: Research Assistant
+* Summer 2019: Research Assistant - REU Scholar
   * University of Minnesota
   * Classified fMRI patterns of activation from participants percieving color versus black-and-white stripes; determined best classifier 
     for dataset in McCollough Effect project.
   * Supervisor: Professor Stephen Engel
 
-* Fall 2018: Research Assistant
+* Fall 2018-Present: Research Assistant
   * Scripps College
   * Leveraging the drift diffusion model to fit EEG data from a novel social decision making task.
   * Supervisor: Professor Michael Spezio
@@ -30,15 +30,17 @@ Skills
 ======
 * Programming
   * MATLAB
-  * C++
   * Python
+  * R
+  * C++
+  * Java
 * Public speaking
 
 Leadership and service
 ======
 * Motley Coffeehouse
   * Managed Scripps College’s primer collaboration space as a barista and facilities manager
-  * Planning remodel project to create better workspace efficiency and sustainable business practices
+  * Planned remodel project to create better workspace efficiency and sustainable business practices
 
 * Girl Scouts of the USA, Ambassador
   * Silver Award: Ran an Intro to Technology course at local senior center; taught basics like email and browsing
