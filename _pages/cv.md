@@ -51,19 +51,19 @@ Teaching Experience
 Leadership and Professional Experience
 ======
 
-Scripps College Academy, STEAM Coordinator
+[Scripps College Academy](https://www.scrippscollege.edu/academy/), STEAM Coordinator
 * Spring 2021
   * Implemented program for >80 underrepresented high school women in the Los Angeles and Inland Empire area to provide access to experiences in science, technology, engineering, art, and mathematics as a part of college preparation
   * Coordinated different external speakers and activity leaders over the semester
 
-Motley Coffeehouse, Facilities Manager
+[Motley Coffeehouse](https://themotleycoffeehouse.com/), Facilities Manager
 * Fall 2018
   * Communicated regularly with suppliers to keep machines in good working condition for busy community coffee shop
   * Organized deep cleans for subsets of >50 baristas
   * Trained in California Department of Food Safety regulations as food manager
   * Planned remodel project to create better workspace efficiency and sustainable business practices
 
-Girl Scouts of the USA, Ambassador
+[Girl Scouts of the USA: Heart of New Jersey](https://www.gshnj.org/), Ambassador
 * Silver Award
   * Ran an Intro to Technology course at local senior center; taught basics like email and browsing
 * Gold Award
