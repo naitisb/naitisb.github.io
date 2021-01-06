@@ -15,26 +15,43 @@ Education
 
 Research experience
 ======
-* Summer 2019: Research Assistant - REU Scholar
-  * University of Minnesota
-  * Classified fMRI patterns of activation from participants percieving color versus black-and-white stripes; determined best classifier 
-    for dataset in McCollough Effect project.
-  * Supervisor: Professor Stephen Engel
+* Language and Cognition Lab || Summer 2020 - Present
+  * Summer Research Assistant; Thesis Student
+  * Stanford University, Stanford, CA
+  * Mentors: Bria Long, PhD and Michael C. Frank, PhD
+  * Participated in eight-week training through the Center for the Study of Language and Information NSF-funded Research for Undergraduates (REU) Summer Internship
+  * Crafted tools for recognizing objects in infant egocentric head-mounted camera video frames to train computer vision models and inform early word learning
 
-* Fall 2018-Present: Research Assistant
+* Engel Vision and Imaging Lab || Summer 2019
+  * Summer Research Assistant
+  * University of Minnesota. Minneapolis, MN
+  * Mentors: Katherine E.M. Tregillus, PhD and Stephen A. Engel, PhD
+  * Participated in ten-week intensive training in MRI and EEG neuroimaging through the Cognitive Neuroscience NSF-funded Research for Undergraduates (REU) Program
+  * Evaluated classifiers using fMRI patterns of activation to predict perceived color to uncover plasticity in color perception in visual cortex
+
+* Laboratory for Inquiring into Valuation and Emotion || Fall 2018
+  * Research Assistant
   * Scripps College
-  * Leveraging the drift diffusion model to fit EEG data from a novel social decision making task.
-  * Supervisor: Professor Michael Spezio
+  * Leveraged the drift diffusion model to fit EEG data from a novel social decision making task.
+  * Mentor: Michael Spezio, PhD
   
 Skills
 ======
 * Programming
-  * MATLAB
   * Python
   * R
+  * MATLAB
   * C++
   * Java
-* Public speaking
+* Neuroimaging
+ * fMRI
+ * EEG
+
+Languages
+======
+* English
+* Gujarati
+* Spanish
 
 Leadership and service
 ======
