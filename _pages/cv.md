@@ -33,6 +33,8 @@ Professional Research
 ======
 **Bhatt, N.S.**, Tregillus, K.E.M., Engel, S.A. (2019). Classification Analyses of fMRI Data Predict Perceived Color. [Poster](https://github.com/naitib/naitib.github.io/blob/master/files/Bhatt_Naiti_LSSURP_Poster.pdf) presented at [Bay Area Vision Research Day (BAVRD)](https://vision.berkeley.edu/events/bavrd), Berkeley, California.
 
+**Bhatt, N.S.**, Tregillus, K.E.M., Engel, S.A. (2019). Classification Analyses of fMRI Data Predict Perceived Color. [Poster](https://github.com/naitib/naitib.github.io/blob/master/files/Bhatt_Naiti_LSSURP_Poster.pdf) presented at [Southern California Conference for Undergraduate Research (SCCUR)](https://www.sccur.org/sccur/fall_2019_conference/poster_session_2/7/), San Marcos, California.
+
 Teaching Experience
 ======
 [Computability and Logic (CSCI 081)](http://catalog.hmc.edu/preview_course_nopop.php?catoid=11&coid=3042), Teaching Assistant
