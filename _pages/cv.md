@@ -78,8 +78,8 @@ Skills
   * C++
   * Java
 * Neuroimaging
- * fMRI
- * EEG
+  * fMRI
+  * EEG
 
 Languages
 ======
