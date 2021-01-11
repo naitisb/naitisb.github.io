@@ -84,7 +84,7 @@ author:
   avatar           : "IMG_4283 2.jpeg"
   bio              : "Oscillating between amazement with computational cognitive science and adoration for coffee extraction."
   location         : "Claremont, CA"
-  employer         : "Scripps College"
+  employer         : # "Scripps College"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
   email            :
