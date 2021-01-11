@@ -86,7 +86,7 @@ author:
   location         : "Claremont, CA"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : https://scholar.google.com/citations?user=C0-z5VcAAAAJ&hl=en&oi=ao
+  googlescholar    : "https://scholar.google.com/citations?user=C0-z5VcAAAAJ&hl=en&oi=ao"
   email            :
   researchgate     : "https://www.researchgate.net/profile/Naiti_Bhatt"
   uri              :
