@@ -1,11 +1,8 @@
-
 ---
 layout: archive
-title: "Contact"
-permalink: /contact/
+title: "Contact Me"
 author_profile: true
-redirect_from:
-  - /contactme
+permalink: /contact/
 ---
 
 {% include base_path %}
