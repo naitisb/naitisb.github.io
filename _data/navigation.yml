@@ -19,7 +19,7 @@ main:
     url: /contact/
     
   - title: "Blog"
-    url: http://naitisbwriting.blogspot.com/
+    url: "http://naitisbwriting.blogspot.com/"
     
 #   - title: "Guide"
 #     url: /markdown/
