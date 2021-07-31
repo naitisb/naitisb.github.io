@@ -11,12 +11,17 @@ redirect_from:
 
 Education
 ======
-* B.A. in Computer Science and Neuroscience, [Scripps College](https://www.scrippscollege.edu/), May 2021 (expected)
+* B.A. in Computer Science and Neuroscience, [Scripps College](https://www.scrippscollege.edu/), May 2021.
 
 Research experience
 ======
+[Hartley Lab](https://www.hartleylab.org), Lab Manager
+* Summer 2020 - Spring 2021
+* [New York University](https://www.nyu.edu/), New York, NY
+* Mentors: [Catherine Hartley, PhD](https://as.nyu.edu/content/nyu-as/as/faculty/catherine-alexandra-hartley.html)
+
 [Language and Cognition Lab](https://langcog.stanford.edu/),  Summer Research Assistant; Thesis Student
-* Summer 2020 - Present
+* Summer 2020 - Spring 2021
 * [Stanford University](https://www.stanford.edu/), Stanford, CA
 * Mentors: [Bria Long, PhD](https://www.brialong.com/) and [Michael C. Frank, PhD](https://web.stanford.edu/~mcfrank/)
   * Participated in eight-week training through the [Center for the Study of Language and Information NSF-funded Research for Undergraduates (REU) Summer Internship](https://www-csli.stanford.edu/csli-summer-internship-program-2021)
