@@ -16,7 +16,7 @@ Education
 Research experience
 ======
 [Hartley Lab](https://www.hartleylab.org), Lab Manager
-* Summer 2020 - Spring 2021
+* Summer 2021 - Present
 * [New York University](https://www.nyu.edu/), New York, NY
 * Mentors: [Catherine Hartley, PhD](https://as.nyu.edu/content/nyu-as/as/faculty/catherine-alexandra-hartley.html)
 
