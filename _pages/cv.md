@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* B.A. in Computer Science and Neuroscience, [Scripps College](https://www.scrippscollege.edu/), May 2021.
+* B.A. in Computer Science and Neuroscience (Cum Laude), [Scripps College](https://www.scrippscollege.edu/), May 2021.
 
 Research experience
 ======
@@ -84,11 +84,12 @@ Leadership and Professional Experience
 Skills
 ======
 * Programming
-  * Python
-  * R
+  * Python (tensorflow, keras)
+  * R (tidyverse)
   * MATLAB
   * C++
   * Java
+  * Javascript/HTML (jsPsych, React Native)
 * Neuroimaging
   * fMRI
   * EEG
