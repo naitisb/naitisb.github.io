@@ -34,15 +34,18 @@ Research experience
   * Participated in ten-week intensive training in MRI and EEG neuroimaging through the [Cognitive Neuroscience NSF-funded Research for Undergraduates (REU) Program](http://neuroimagingreu.umn.edu/)
   * Evaluated classifiers using fMRI patterns of activation to predict perceived color to uncover plasticity in color perception in visual cortex
 
-Professional Research
+Research
 ======
-Long, B., Kachergis, G., **Bhatt, N. S.**, Frank, M. C. (2021). Characterizing the object categories two children see and interact with in a dense dataset of naturalistic visual experience. Proceedings of the 43rd Annual Conference of the Cognitive Science Society.
 
-Zettersten, M., Bergey, C. A., **Bhatt, N. S.**, Boyce, V., Braginsky, M., Carstensen, A., ..., Frank, M. C. (2021). Peekbank: Exploring children's word recognition through an open, large-scale repository for developmental eye-tracking data. Proceedings of the 43rd Annual Conference of the Cognitive Science Society.
+**Bhatt, N. S.** (2021). [Uncovering Object Categories in Infant Views](https://scholarship.claremont.edu/scripps_theses/1664). Scripps Senior Theses. 1664.
 
-**Bhatt, N.S.**, Tregillus, K.E.M., Engel, S.A. (2019). Classification Analyses of fMRI Data Predict Perceived Color. [Poster](https://github.com/naitib/naitib.github.io/blob/master/files/Bhatt_Naiti_LSSURP_Poster.pdf) presented at [Bay Area Vision Research Day (BAVRD)](https://vision.berkeley.edu/events/bavrd), Berkeley, California.
+Long, B., Kachergis, G., **Bhatt, N. S.**, Frank, M. C. (2021). [Characterizing the object categories two children see and interact with in a dense dataset of naturalistic visual experience](https://doi.org/10.31234/osf.io/nv47t). Proceedings of the 43rd Annual Conference of the Cognitive Science Society.
 
-**Bhatt, N.S.**, Tregillus, K.E.M., Engel, S.A. (2019). Classification Analyses of fMRI Data Predict Perceived Color. [Poster](https://github.com/naitib/naitib.github.io/blob/master/files/Bhatt_Naiti_LSSURP_Poster.pdf) presented at [Southern California Conference for Undergraduate Research (SCCUR)](https://www.sccur.org/sccur/fall_2019_conference/poster_session_2/7/), San Marcos, California.
+Zettersten, M., Bergey, C. A., **Bhatt, N. S.**, Boyce, V., Braginsky, M., Carstensen, A., ..., Frank, M. C. (2021). [Peekbank: Exploring children's word recognition through an open, large-scale repository for developmental eye-tracking data](https://doi.org/10.31234/osf.io/ep693). Proceedings of the 43rd Annual Conference of the Cognitive Science Society.
+
+**Bhatt, N.S.**, Tregillus, K.E.M., Engel, S.A. (2019). Classification Analyses of fMRI Data Predict Perceived Color. [Poster](https://github.com/naitisb/naitisb.github.io/blob/master/files/Bhatt_Naiti_LSSURP_Poster.pdf) presented at [Bay Area Vision Research Day (BAVRD)](https://vision.berkeley.edu/events/bavrd), Berkeley, California.
+
+**Bhatt, N.S.**, Tregillus, K.E.M., Engel, S.A. (2019). Classification Analyses of fMRI Data Predict Perceived Color. [Poster](https://github.com/naitisb/naitisb.github.io/blob/master/files/Bhatt_Naiti_LSSURP_Poster.pdf) presented at [Southern California Conference for Undergraduate Research (SCCUR)](https://www.sccur.org/sccur/fall_2019_conference/poster_session_2/7/), San Marcos, California.
 
 Teaching Experience
 ======
