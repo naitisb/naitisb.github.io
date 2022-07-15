@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* Ph.D. in Developmental Science, [University of Edinburgh](https://www.ed.ac.uk/), (expected) September 2026.
-* M.Sc. in Psychological Research, [University of Edinburgh](https://www.ed.ac.uk/), (expected) September 2023.
+* Ph.D. in Psychology, [University of Edinburgh](https://www.ed.ac.uk/), September 2026 (expected).
+* M.Sc. in Psychological Research, [University of Edinburgh](https://www.ed.ac.uk/), September 2023 (expected).
 * B.A. in Computer Science and Neuroscience (Cum Laude), [Scripps College](https://www.scrippscollege.edu/), May 2021.
 
 Research experience
