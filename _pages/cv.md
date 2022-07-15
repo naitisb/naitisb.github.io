@@ -11,15 +11,18 @@ redirect_from:
 
 Education
 ======
+* Ph.D. in Developmental Science, [University of Edinburgh](https://www.ed.ac.uk/), (expected) September 2026.
+* M.Sc. in Psychological Research, [University of Edinburgh](https://www.ed.ac.uk/), (expected) September 2023.
 * B.A. in Computer Science and Neuroscience (Cum Laude), [Scripps College](https://www.scrippscollege.edu/), May 2021.
 
 Research experience
 ======
 [Hartley Lab](https://www.hartleylab.org), Lab Manager
-* Summer 2021 - Present
+* Summer 2021 - August 2022
 * [New York University](https://www.nyu.edu/), New York, NY
 * Mentors: [Catherine Hartley, PhD](https://as.nyu.edu/content/nyu-as/as/faculty/catherine-alexandra-hartley.html)
-
+  * Characterizing developmental changes in attentional strategies, social abilities, and mnemonic specificity as related to reward-driven decision-making.
+  * Maintaining various research protocols and attending to lab administrative needs.
 [Language and Cognition Lab](https://langcog.stanford.edu/),  Summer Research Assistant; Thesis Student
 * Summer 2020 - Spring 2021
 * [Stanford University](https://www.stanford.edu/), Stanford, CA
@@ -37,11 +40,15 @@ Research experience
 Research
 ======
 
+Nussenbaum, K., ..., **Bhatt, N. S.**, ..., Hartley, C.A. (2022). [Novelty and uncertainty differentially drive exploration across development](https://psyarxiv.com/pkn7j/download?format=pdf). PsyArXiv.
+
+Zettersten, M., ..., **Bhatt, N. S.**, ..., Frank, M.C. (2022). [Peekbank: An open, large-scale repository for developmental eye-tracking data of children’s word recognition](https://psyarxiv.com/tgnzv/download?format=pdf). PsyArXiv.
+
 **Bhatt, N. S.** (2021). [Uncovering Object Categories in Infant Views](https://scholarship.claremont.edu/scripps_theses/1664). Scripps Senior Theses. 1664.
 
 Long, B., Kachergis, G., **Bhatt, N. S.**, Frank, M. C. (2021). [Characterizing the object categories two children see and interact with in a dense dataset of naturalistic visual experience](https://doi.org/10.31234/osf.io/nv47t). Proceedings of the 43rd Annual Conference of the Cognitive Science Society.
 
-Zettersten, M., Bergey, C. A., **Bhatt, N. S.**, Boyce, V., Braginsky, M., Carstensen, A., ..., Frank, M. C. (2021). [Peekbank: Exploring children's word recognition through an open, large-scale repository for developmental eye-tracking data](https://doi.org/10.31234/osf.io/ep693). Proceedings of the 43rd Annual Conference of the Cognitive Science Society.
+Zettersten, M., ..., **Bhatt, N. S.**, ..., Frank, M. C. (2021). [Peekbank: Exploring children's word recognition through an open, large-scale repository for developmental eye-tracking data](https://doi.org/10.31234/osf.io/ep693). Proceedings of the 43rd Annual Conference of the Cognitive Science Society.
 
 **Bhatt, N.S.**, Tregillus, K.E.M., Engel, S.A. (2019). Classification Analyses of fMRI Data Predict Perceived Color. [Poster](https://github.com/naitisb/naitisb.github.io/blob/master/files/Bhatt_Naiti_LSSURP_Poster.pdf) presented at [Bay Area Vision Research Day (BAVRD)](https://vision.berkeley.edu/events/bavrd), Berkeley, California.
 
