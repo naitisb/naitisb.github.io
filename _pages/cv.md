@@ -23,6 +23,7 @@ Research experience
 * Mentors: [Catherine Hartley, PhD](https://as.nyu.edu/content/nyu-as/as/faculty/catherine-alexandra-hartley.html)
   * Characterizing developmental changes in attentional strategies, social abilities, and mnemonic specificity as related to reward-driven decision-making.
   * Maintaining various research protocols and attending to lab administrative needs.
+
 [Language and Cognition Lab](https://langcog.stanford.edu/),  Summer Research Assistant; Thesis Student
 * Summer 2020 - Spring 2021
 * [Stanford University](https://www.stanford.edu/), Stanford, CA
