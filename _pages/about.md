@@ -10,9 +10,10 @@ redirect_from:
 
 {% include base_path %}
 
-Hello, thanks for stopping by! My name is Naiti [IPA: neθi]. I'm currently a lab manager at the [Hartley Lab](www.hartleylab.org) at New York University, where I am involved in various projects formalizing models of learning and decision-making as they change over development.
+Hello, thanks for stopping by! My name is Naiti [IPA: neθi]. Broadly, I'm excited about the intersection of cognitive development and artificial learning. While I'm most drawn to formalizing computational models to characterize various dimensions of children's cognitive development, I'm also eager to get involved in using our understanding of child development to craft better algorithms of artifical intelligence.
 
-I am broadly excited about the intersection of cognitive development and artificial learning, specifically with respect to perceptual learning and pattern recognition.
+I'm currently finishing my position as lab manager at the [Hartley Lab](www.hartleylab.org) at New York University, where I am involved in various projects formalizing models of learning and decision-making as they change over development. Next, I'm headed to Edinburgh to begin my graduate studies at the University of Edinburgh, where I'll be advised by [Hilary Richardson](https://www.ed.ac.uk/profile/hilary-richardson). For my PhD, I'll be studying the structural and functional changes in neural mechanisms as related to the development of theory of mind reasoning (FMI, see [Wikipedia](https://en.wikipedia.org/wiki/Theory_of_mind) or [Science Direct](https://www.sciencedirect.com/topics/neuroscience/theory-of-mind).
+
 
 I graduated from Scripps College in May 2021, where I majored in Computer Science and Neuroscience, advised by [Tessa Solomon-Lane](https://tessasolomonlane.com/) and [Julie Medero](https://www.cs.hmc.edu/~julie/). My senior thesis explored object categorization in infant visual scenes, and was supervised by [Bria Long](https://www.brialong.com/), [Michael C. Frank](https://web.stanford.edu/~mcfrank/), and [John G. Milton](http://faculty.jsd.claremont.edu/jmilton/).
 
