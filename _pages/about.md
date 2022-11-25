@@ -10,7 +10,7 @@ redirect_from:
 
 {% include base_path %}
 
-Hello, thanks for stopping by! My name is Naiti [IPA: neθi]. Broadly, I'm excited about the intersection of cognitive development and artificial learning. While I'm most drawn to formalizing computational models to characterize children's social , I'm also eager to get involved in using our understanding of child development to craft better algorithms of artifical intelligence.
+Hello, thanks for stopping by! My name is Naiti [IPA: neθi]. Broadly, I'm excited about the intersection of cognitive development and artificial learning. While I'm most drawn to formalizing computational models to characterize children's social learning, I'm also eager to get involved in using our understanding of child development to craft better algorithms of artifical intelligence.
 
 I'm currently working on my MSc in Psychological Research at the University of Edinburgh, where I am advised by [Hilary Richardson](https://www.ed.ac.uk/profile/hilary-richardson). Next year, I'll begin my PhD in Psychology here. For my PhD, I will continue to study the structural and functional changes in neural mechanisms as related to the development of theory of mind reasoning (FMI, see [Wikipedia](https://en.wikipedia.org/wiki/Theory_of_mind) or [Science Direct](https://www.sciencedirect.com/topics/neuroscience/theory-of-mind)).
 
