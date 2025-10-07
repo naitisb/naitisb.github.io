@@ -11,7 +11,6 @@ redirect_from:
 
 Education
 ======
-* Ph.D. in Psychology, [University of Edinburgh](https://www.ed.ac.uk/), September 2026 (expected).
 * M.Sc. in Psychological Research, [University of Edinburgh](https://www.ed.ac.uk/), September 2023.
 * B.A. in Computer Science and Neuroscience (Cum Laude), [Scripps College](https://www.scrippscollege.edu/), May 2021.
 
@@ -98,13 +97,13 @@ Skills
 * Programming
   * Python (tensorflow, keras)
   * R (tidyverse)
+  * Linux
   * MATLAB
   * C++
   * Java
   * Javascript/HTML (jsPsych, React Native)
 * Neuroimaging
-  * fMRI
-  * EEG
+  * MRI (fMRIPrep, FSL, ANTs, MRtrix3)
 
 Languages
 ======
