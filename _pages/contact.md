@@ -7,8 +7,4 @@ permalink: /contact/
 
 {% include base_path %}
 
-naiti [at] nyu [dot] edu
-
-or 
-
 naitibhatt [at] gmail [dot] com
