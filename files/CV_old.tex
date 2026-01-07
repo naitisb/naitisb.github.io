@@ -1,0 +1,764 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Simple LaTeX CV Template %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTE: If you find that it says                                     %%
+%%                                                                    %%
+%%                           1 of ??                                  %%
+%%                                                                    %%
+%% at the bottom of your first page, this means that the AUX file     %%
+%% was not available when you ran LaTeX on this source. Simply RERUN  %%
+%% LaTeX to get the ``??'' replaced with the number of the last page  %%
+%% of the document. The AUX file will be generated on the first run   %%
+%% of LaTeX and used on the second run to fill in all of the          %%
+%% references.                                                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[10pt]{article}
+\RequirePackage[T1]{fontenc}
+
+% LaTeX will typeset using Computer Modern Roman, which a lot of
+% non-mathematicians and non-engineers won't like. Also, a few PDF
+% viewers may not render CMR very well. Instead, Times New Roman can
+% be used. That's what this package does.
+%\usepackage{times} %non-professional
+%\usepackage{lmodern} %basically latex
+%\usepackage{fourier} %
+%\usepackage{kpfonts} %kepler
+%\usepackage{libertine}
+%\usepackage{newpxtext}
+\usepackage[sc]{libertine}
+% The automated optical recognition software used to digitize resume
+% information works best with fonts that do not have serifs. This
+% command uses a sans serif font throughout. Uncomment both lines (or at
+% least the second) to restore a Roman font (i.e., a font with serifs).
+% (NOTE: This requires the times package above)
+%\renewcommand{\familydefault}{\sfdefault}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+
+% This package helps LaTeX auto-hyphenate hyphenated words if you use
+% special hyphens. For example, bio\-/mimicry will properly hyphenate
+% ``mimicry'' if necessary.
+\usepackage[shortcuts]{extdash}
+
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+\usepackage[paper=letterpaper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=0.9in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            margin=0.7in,               % 0.7 inch margins
+            includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+%\usepackage[paper=a4paper,
+%            %includefoot, % Uncomment to put page number above margin
+%            marginparwidth=30.5mm,    % Length of section titles
+%            marginparsep=1.5mm,       % Space between titles and text
+%            margin=25mm,              % 25mm margins
+%            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+% Provides special list environments and macros to create new ones
+\usepackage[shortlabels]{enumitem}
+
+% Simpler bibsections for CV sections
+% (thanks to natbib for inspiration)
+%
+% * For lists of references with hanging indents and no numbers:
+%
+%   \begin{bibsection}
+%       \item ...
+%   \end{bibsection}
+%
+% * For numbered lists of references (with hanging indents):
+%
+%   \begin{bibenum}
+%       \item ...
+%   \end{bibenum}
+%
+%   Note that bibenum numbers continuously throughout. To reset the
+%   counter, use
+%
+%   \restartlist{bibenum}
+%
+%   at the place where you want the numbering to reset.
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{0em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newlist{bibsection}{itemize}{3}
+\setlist[bibsection]{label=,leftmargin=\bibhang,%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\newlist{bibenum}{enumerate}{3}
+\setlist[bibenum]{label=[\arabic*],resume,leftmargin={\bibhang+\widthof{[999]}},%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+        
+\newlist{bibnum}{enumerate}{3}
+\setlist[bibnum]{label=[\arabic*],resume,leftmargin={\bibhang+7pt},%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+        
+\let\oldendbibenum\endbibenum
+\def\endbibenum{\oldendbibenum\vspace{-.6\baselineskip}}
+\let\oldendbibsection\endbibsection
+\def\endbibsection{\oldendbibsection\vspace{-.6\baselineskip}}
+\makeatother
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%                    \arabic{page}                               % -LP
+                    \hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% HEADING AT TOP OF CURRICULUM VITAE
+
+% The title (name) with a horizontal rule under it
+% (optional argument typesets an object right-justified across from name
+%  as well)
+%
+% Usage: \makeheading{name}
+%        OR
+%        \makeheading[right_object]{name}
+%
+% Place at top of document. It should be the first thing.
+% If ``right_object'' is provided in the square-braced optional
+% argument, it will be right justified on the same line as ``name'' at
+% the top of the CV. For example:
+%
+%       \makeheading[\emph{Curriculum vitae}]{Your Name}
+%
+% will put an emphasized ``Curriculum vitae'' at the top of the document
+% as a title. Likewise, a picture could be included:
+%
+%   \makeheading[{\includegraphics[height=1.5in]{my_picture}}]{Your Name}
+%
+% the picture will be flush right across from the name. For this example
+% to work, make sure the extra set of curly braces is included. Also
+% makes ure that \usepackage{graphicx} is somewhere in the preamble.
+\newcommand{\makeheading}[2][]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+             {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+%%% SECTION HEADINGS
+
+% The section headings. Flush left in small caps down pseudo-margin.
+%
+% Usage: \section{section name}
+\renewcommand{\section}[1]{\pagebreak[3]%
+    \vspace{0.5\baselineskip}%
+    \phantomsection\addcontentsline{toc}{section}{#1}%
+    \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\hyphenpenalty=10000\raggedright #1}}}%
+    \vspace{-\baselineskip}\par}
+
+%%% LISTS
+
+% This macro alters a list by removing some of the space that follows the list
+% (is used by lists below)
+\newcommand*\fixendlist[1]{%
+    \expandafter\let\csname preFixEndListend#1\expandafter\endcsname\csname end#1\endcsname
+    \expandafter\def\csname end#1\endcsname{\csname preFixEndListend#1\endcsname\vspace{-0.6\baselineskip}}}
+
+% These macros help ensure that items in outer-type lists do not get
+% separated from the next line by a page break
+% (they are used by lists below)
+\let\originalItem\item
+\newcommand*\fixouterlist[1]{%
+    \expandafter\let\csname preFixOuterList#1\expandafter\endcsname\csname #1\endcsname
+    \expandafter\def\csname #1\endcsname{\let\oldItem\item\def\item{\pagebreak[2]\oldItem}\csname preFixOuterList#1\endcsname}
+    \expandafter\let\csname preFixOuterListend#1\expandafter\endcsname\csname end#1\endcsname
+    \expandafter\def\csname end#1\endcsname{\let\item\oldItem\csname preFixOuterListend#1\endcsname}}
+\newcommand*\fixinnerlist[1]{%
+    \expandafter\let\csname preFixInnerList#1\expandafter\endcsname\csname #1\endcsname
+    \expandafter\def\csname #1\endcsname{\let\oldItem\item\let\item\originalItem\csname preFixInnerList#1\endcsname}
+    \expandafter\let\csname preFixInnerListend#1\expandafter\endcsname\csname end#1\endcsname
+    \expandafter\def\csname end#1\endcsname{\csname preFixInnerListend#1\endcsname\let\item\oldItem}}
+
+% An itemize-style list with lots of space between items
+%
+% Usage:
+%   \begin{outerlist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{outerlist}
+\newlist{outerlist}{itemize}{3}
+    \setlist[outerlist]{label=\enskip\textbullet,leftmargin=*}
+    \fixendlist{outerlist}
+    \fixouterlist{outerlist}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+%
+% Usage:
+%   \begin{lonelist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{lonelist}
+\newlist{lonelist}{itemize}{3}
+    \setlist[lonelist]{label=\enskip\textbullet,leftmargin=*,partopsep=0pt,topsep=0pt}
+    \fixendlist{lonelist}
+    \fixouterlist{lonelist}
+
+% An itemize-style list with little space between items
+%
+% Usage:
+%   \begin{innerlist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{innerlist}
+\newlist{innerlist}{itemize}{3}
+    \setlist[innerlist]{label=\enskip\textbullet,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt}
+    \fixinnerlist{innerlist}
+
+% An environment IDENTICAL to innerlist that has better pre-list spacing
+% when used as the first thing in a \section
+%
+% Usage:
+%   \begin{loneinnerlist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{loneinnerlist}
+\newlist{loneinnerlist}{itemize}{3}
+    \setlist[loneinnerlist]{label=\enskip\tiny\textbullet,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt}
+    \fixendlist{loneinnerlist}
+    \fixinnerlist{loneinnerlist}
+
+%%% EXTRA SPACE
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[3]}
+\newcommand{\halfblankline}{\quad\vspace{-0.5\baselineskip}\pagebreak[3]}
+
+%%% FORMATTING MACROS
+
+% Provides a linked \doi{#1} that links doi:#1 to http://dx.doi.org/#1
+\usepackage{doi}
+% To change the text before the DOI, adjust this command
+%\renewcommand\doitext{doi:}
+
+\newcommand{\tbfit}[1]{\textit{\textbf{#1}}}
+
+% Provides a linked \url{#1} that doesn't require escape characters
+\usepackage{url}
+
+% You can adjust the style \url{} uses here:
+% (options are: same, rm, sf, tt; defaults to tt)
+\urlstyle{same}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+% (uncomment to typeset the e\-/mail address in typewriter font;
+%  otherwise, will be typeset in the \urlstyle above)
+%\DeclareUrlCommand\emaillink{\urlstyle{tt}}
+\providecommand*\emaillink[1]{\nolinkurl{#1}}
+\providecommand*\email[1]{\href{mailto:#1}{\emaillink{#1}}}
+
+\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em \TeX}}
+\providecommand\Matlab{\textsc{Matlab}}
+
+% Custom hyphenation rules for words that LaTeX has trouble with
+\hyphenation{bio-mim-ic-ry bio-in-spi-ra-tion re-us-a-ble pro-vid-er Media-Wiki}
+
+% \tolerance=1
+% \emergencystretch=\maxdimen
+% \hyphenpenalty=10000
+% \hbadness=10000
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\makeheading{Naiti S. Bhatt}
+
+
+\section{Contact Information}
+\vspace{-0.5cm}
+% NOTE: Mind where the & separators and \\ breaks are in the following
+%       table. Table is one row made up of three parboxes. The left
+%       parbox has address info, the middle parbox has a vertical bar,
+%       and the right parbox has phone and electronic contact
+%       information.
+%
+% MACROS: \rcollength is the width of the right column of the table
+%             (adjust it to your liking; default is 1.85in).
+%         \spacewidth is width of area between left and right boxes.
+%
+\newlength{\rcollength}\setlength{\rcollength}{2in}%
+\newlength{\spacewidth}\setlength{\spacewidth}{15pt}
+%
+% \begin{tabular}[t]{@{}p{\textwidth-\rcollength-\spacewidth}@{}p{\spacewidth}@{}p{\rcollength}}%
+% % Address box
+% \parbox{\textwidth-\rcollength-\spacewidth}{\href{https://www.cam.ac.uk/}{University of Cambridge}\\
+% \href{http://mlg.eng.cam.ac.uk/}{Machine Learning Group}}
+% &
+% % Uncomment to add a vertical bar in middle of contact information
+% %{\vrule width 0.5pt}
+% \parbox[m][5\baselineskip]{\spacewidth}{} &
+
+% % Non-snail-mail contact information
+% \parbox{\rcollength}{%
+% Email: \email{usb20@cam.ac.uk}\\
+% Website: \href{http://umangsbhatt.github.io}{umangsbhatt.github.io}}
+% \end{tabular}
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength-\spacewidth}@{}p{\spacewidth}@{}p{\rcollength}}%
+% Address box
+\parbox{\textwidth-\rcollength-\spacewidth}{
+\email{naitibhatt@gmail.com} \\
+\href{http://naitisb.github.io}{naitisb.github.io}
+}
+&
+% Uncomment to add a vertical bar in middle of contact information
+%{\vrule width 0.5pt}
+\parbox[m][5\baselineskip]{\spacewidth}{} &
+
+% Non-snail-mail contact information
+\parbox{\rcollength}{%
+
+}
+\end{tabular}
+
+%%
+%% In modern CV's, it seems like ``Objective'' is frowned upon. Instead,
+%% incorporate it into a well-constructed cover letter. The ``More
+%% information'' can go at the end of the CV, but it should not distract
+%% from the section giving references available to contact.
+%%
+%
+% \section{Objective}
+%
+% Placement in an academic position (i.e., faculty, postdoctoral, or
+% research scientist) that allows for advanced research in distributed
+% complex adaptive systems (i.e., modeling, analysis, design, and
+% verification) with a particular focus on the control of engineered
+% agents (e.g., for communications, control, software, electronics, and
+% sustainability) and the analysis of biological phenomena (e.g.,
+% self-organization, ecological rationality)
+% \begin{innerlist}
+% \item More information and auxiliary documents can be found at\\\url{http://www.tedpavlic.com/facjobsearch/}
+% \end{innerlist}
+\vspace{-0.5cm}
+% \section{Research Interests}
+% \begin{innerlist}
+% \item Interpretable and Fair Machine Learning
+% \item Explainable Artificial Intelligence
+% \item Human-AI collaboration
+% \end{innerlist}
+
+
+\section{Education}
+
+\textbf{University of Edinburgh},
+Edinburgh, UK 
+ \hfill 2022 -- 2023
+\begin{innerlist}
+\item[] M.Sc. in Psychological Research
+        \hfill Awarded With Merit
+        \begin{innerlist}
+        \item[] \textit{Advisor}:
+        \href{https://richardsonlab.ppls.ed.ac.uk/}
+                  {Dr. Hilary Richardson}
+                  
+        \end{innerlist}
+\end{innerlist}
+
+\textbf{Scripps College},
+Claremont, USA
+\hfill 2017 -- 2021
+\begin{innerlist}
+\item[] B.A. in Computer Science and Neuroscience  \hfill  Cum Laude
+        \begin{innerlist}
+        \item[] \textit{Advisors}:
+        \href{https://tessasolomonlane.com/}
+                  {Dr. Tessa Solomon-Lane}
+                  and
+              \href{https://www.cs.hmc.edu/~julie/}
+                  {Dr. Julie Medero}
+        % \item[] \textit{Committee}:
+        %       \href{http://mlg.eng.cam.ac.uk/adrian/}
+        %           {Adrian Weller} (Advisor), Neil Lawrence, Daniel Weld
+        % \item[] \textit{Affiliations}: \href{http://mlg.eng.cam.ac.uk/}{Machine Learning Group}, Computation and Biological Learning Lab
+        %, and \href{http://lcfi.ac.uk/}{Leverhulme Center for the Future of Intelligence}
+        \end{innerlist}
+\end{innerlist}
+
+\section{Research Experience}
+% Enrichment Fellow, \textbf{The Alan Turing Institute} \hfill {Starting Oct 2021}
+            
+% Student Fellow,
+%             \textbf{Humanities Institute at Scripps College}
+%             \hfill {Jan 2021 -- Present}
+Postgraduate Researcher,
+           \textbf{University of Edinburgh}
+            \hfill {September 2022 -- September 2025}
+            \begin{innerlist}
+        \item[]  \small \textit{Supervisor}:
+                   Dr. Hilary Richardson
+                  \item Developed methods to investigate associations between behavioral data using a theory of mind task and neural data extracted from structural and functional MRI in 5- to 12-year old children.
+        \end{innerlist} 
+
+Junior Research Associate, \textbf{New York University} \hfill {May 2021 -- August 2022}
+\begin{innerlist}
+    \item[]  \small \textit{Supervisor}:
+       Dr. Catherine A. Hartley
+       \item Characterized developmental changes in attentional strategies, social abilities, and mnemonic specificity as related to reward-driven decision-making around adolescence.
+       % \item Maintained various research protocols and attended to lab administrative needs to support research.
+\end{innerlist}
+
+Software Engineer (Part-Time), \textbf{Stanford University}  \hfill {June 2021 -- October 2021}
+\begin{innerlist}
+    \item[]  \small \textit{Supervisor}:
+       Dr. Hyowon Gweon
+       \item Streamlined backend participant database retrieval and organization to integrate RedCap information with new codebase.
+\end{innerlist}
+
+
+Contributing Developer,
+           \href{https://peekbank.stanford.edu/}{\textbf{Peekbank Project}}
+            \hfill {August 2020 -- May 2021}
+            \begin{innerlist}
+        \item[]  \small \textit{Supervisors}:
+                   Dr. Martin Zettersten (Princeton), Dr. Michael C. Frank (Stanford)
+                  \item Imported and standardized developmental eye-tracking data for a large-scale, multi-institution database, containing data from $\sim$20 labs.
+        \end{innerlist} 
+
+Thesis Student,
+            \textbf{Scripps College}
+            \hfill {August 2020 -- May 2021}
+            \begin{innerlist}
+        \item[]  \small \textit{Supervisors}:
+                   Dr. Bria Long (Stanford), Dr. Michael C. Frank (Stanford ), Dr. John G. Milton (Scripps)
+                   \item Crafted tools for recognizing objects in infant egocentric head-mounted camera video frames to train computer vision models and inform early word learning.
+        \end{innerlist}
+        
+Summer Research Intern,
+            \textbf{Stanford University}
+            \hfill {June 2020 -- August 2020}
+            \begin{innerlist}
+        \item[]  \small \textit{Supervisors}:
+                   Dr. Bria Long, Dr. Michael C. Frank
+                   \item Crowdsourced labels for categorizing objects in frames from infant egocentric and naturalistic videos to create and analyze an annotated dataset to characterize early infant visual experiences.
+        \end{innerlist}
+        
+% \halfblankline
+
+Summer Research Intern,
+            \textbf{University of Minnesota}
+            \hfill {May 2019 -- August 2019}
+            \begin{innerlist}
+        \item[]  \small \textit{Supervisors}:
+                   Dr. Katherine E.M. Tregillus, Dr. Stephen A. Engel
+                    \item Evaluated classifiers using fMRI patterns of activation to predict perceived color and uncover plasticity of illusory color perception from the McCullough Effect illusion.
+        \end{innerlist}
+
+
+\section{Papers and Posters}
+
+\begin{bibnum}
+\item\textbf{Behind the scenes: Using movies to study the human brain} \newline
+\textit{Frontiers for Young Minds, 2025} \newline
+Lorena Jiménez-Sánchez, Melissa Thye, Selina Abel, \tbfit{Naiti S. Bhatt}, Carmen Bonich, Mingen Luo, Katie Mckinnon, Robina Rubin, Jean Skelton, Rebekah Smikle, Kadi Vaher, \& Hilary Richardson
+\vspace{-7pt}
+\item\textbf{Novelty and uncertainty differentially drive exploration across development}\newline
+\textit{eLife, 2023} \newline
+Kate Nussenbaum, Rebecca E. Martin, Sean Maulhardt, Yi Yang, Greer Bizzell-Hatcher, \tbfit{Naiti S. Bhatt}, Maximilian Scheuplein, Gail M. Rosenbaum, John P. O’Doherty, Jeffrey Cockburn, \& Catherine A. Hartley
+\vspace{-7pt}
+\item\textbf{Peekbank: Exploring children's word recognition through an open, large-scale repository for developmental eye-tracking data} \newline 
+\textit{Behavior Research Methods, 2022} \newline
+Martin Zettersten, ..., \tbfit{Naiti S. Bhatt}, Claire A. Bergey, \& Michael C. Frank
+% \vspace{-7pt}
+% \item\textbf{Uncovering Objects in Infant Views} \newline 
+% \textit{Scripps College Senior Thesis, 2021} \newline 
+% \tbfit{Naiti S. Bhatt}, Bria Long, \& Michael C. Frank
+\vspace{-7pt}
+\item\textbf{Characterizing the object categories two children see and interact with in a dense dataset of naturalistic visual experience} \newline 
+\textit{Proceedings of the 43rd Annual Conference of the Cognitive Science Society, 2021} \newline 
+Bria Long, George Kachergis, \tbfit{Naiti S. Bhatt}, \& Michael C. Frank
+\vspace{-7pt}
+\item\textbf{Peekbank: Exploring children's word recognition through an open, large-scale repository for developmental eye-tracking data} \newline 
+\textit{Proceedings of the 43rd Annual Conference of the Cognitive Science Society, 2021} \newline
+Martin Zettersten, Claire A. Bergey, \tbfit{Naiti S. Bhatt}, ..., \& Michael C. Frank
+\vspace{-7pt}
+\item\textbf{Classification Analyses of fMRI Data Predict Perceived Color} \newline 
+\textit{Poster presented at Southern California Conference for Undergraduate Research (SCCUR), 2019} \newline 
+\textit{Poster presented at Bay Area Vision Research Day (BAVRD), 2019} \newline 
+\tbfit{Naiti S. Bhatt}, Katherine E.M. Tregillus, \& Stephen A. Engel    
+\end{bibnum}
+
+% Add a little space to nudge next ``Conference Publications'' marginpar
+% down to make room for tall ``Submitted Conference Publications''
+% marginpar. If there are enough submitted journal publications, this
+% space will not be needed (and should be removed).
+
+% \section{Select Workshop Publications}
+
+
+% \begin{bibenum}
+
+% \end{bibenum}
+
+% \section{Book Chapters}
+% \begin{bibenum}
+% \item
+% \textbf{On Trustworthy Artificial Intelligence for Healthcare} \newline 
+% \textit{Healthcare Information Technology for Cardiovascular Medicine}. Ed: A.B. Bhatt. Springer 2021\newline
+% \tbfit{Umang Bhatt}, Zohreh Shams
+
+% \end{bibenum}
+
+% % \vspace{0.1in}
+
+% \section{Preprints}
+% \begin{bibenum}
+
+
+
+% \item 
+% \textbf{Uncertainty as a Form of Transparency: Measuring, Communicating, and Using Uncertainty} \newline 
+% \tbfit{Umang Bhatt}, Yunfeng Zhang, Javier Antor\'an, Vera Liao, Gabrielle Melan\c{c}on, Prasanna Sattigeri,  Ranganath Krishnan, Omesh Tickoo, Riccardo Fogliato, Jason Stanley, Lama Nachman, Rumi Chunara, Adrian Weller, Alice Xiang
+
+% \item 
+% \textbf{On Training Point Importance for Fair Models and Diverse Explanations} \newline
+% \tbfit{Umang Bhatt}, Muhammad Bilal Zafar, Isabel Chein, Krishna Gummadi, Adrian Weller
+
+% \item 
+% \textbf{(Quite Literally) Extending Concept Bottlenecks} \newline
+% \tbfit{Umang Bhatt}, Andrei Margeloiu, Mateja Jamnik, Adrian Weller
+
+
+
+% \end{bibenum}
+
+
+
+% \input{talks}
+
+\section{Programming Projects}
+        
+
+\textbf{Manifold-based Binary Classification using Jointly Embedded Geometric Data} \\
+            \textit{Nonlinear Data Analytics (MATH-178)}
+            \hfill {Summer 2020}
+            \begin{innerlist}
+                   \item Jointly embedded mobile phone data and eye tracking data in low dimensional manifold space to more effectively reproduce the classification of whether or not users were attending to their phones.
+        \end{innerlist}
+ 
+  
+\textbf{Endangered? A tool for labeling and classifying animals in the wild.} \\
+            \textit{Software Development (CSCI-121)}
+            \hfill {Autumn 2019}
+            \begin{innerlist}
+                   \item Built a React Native application classifying an uploaded image of an animal, returning predicted genus, species, and conservation status for users to interact with the natural world with concern for other species.
+        \end{innerlist}
+
+\section{Teaching Experience}
+
+\textbf{Lab Teaching Assistant}, University of Edinburgh
+\begin{innerlist}
+\item\textit{Data Analysis for Psychology in R 1} (PSYL08013) with Dr. Umberto Noe
+\hfill Autumn 2023 - Spring 2025
+\item\textit{Psychology 1A/B} with Dr. Hannah Cornish
+\hfill Autumn 2023 - Spring 2024
+\item\textit{Data Analysis for Psychology in R 3} (PSYL10168) with Dr. Umberto Noe
+\hfill Autumn 2023
+\end{innerlist}
+
+\textbf{Teaching Assistant}, Harvey Mudd College
+\begin{innerlist}
+\item\textit{Computability and Logic} (CSCI-081) with Dr. George Monta{\~n}ez
+\hfill Spring 2020
+\end{innerlist}
+
+\textbf{Teaching Assistant}, Pomona College
+\begin{innerlist}
+\item \textit{Calculus II w/ Applications to Science} (MATH-031S) with Dr. Blerta Shtylla
+\hfill  Autumn 2019
+\end{innerlist}
+
+
+\section{Professional \& Academic Service}
+
+Psychology Postgraduate Research \textbf{Student Representative}  \hfill 2023-2025
+
+Psychology Society Community \& Research Association \textbf{Postgraduate Liason}  \hfill 2022-2023
+
+Psychological Research \textbf{Programme Representative}  \hfill 2022-2023
+
+\textbf{Conference Volunteer}
+\begin{innerlist}
+    \item Women in Machine Learning @ NeurIPS \hfill 2021 
+    \item Women in Machine Learning @ NeurIPS \hfill 2019 
+\end{innerlist}
+
+% \halfblankline
+
+% \textbf{Program Committee}
+% %\textbf{Reviewer}
+% \begin{innerlist}
+%     \item International Conference on Machine Learning (ICML) \hfill 2021
+%     \item ACM Conference on Knowledge Discovery and Data Mining (KDD) \hfill 2021
+%     \item ACM Conference on Fairness, Accountability, and Transparency (FAccT) \hfill 2021
+%     \item Conference on Artificial Intelligence and Statistics (AISTATS) \hfill 2021
+%     \item Conference on Artificial Intelligence (AAAI) \hfill 2021
+%     \item International Conference on Learning Representations (ICLR) \hfill 2021
+%     \item ACM Conference on Artificial Intelligence and Finance (ICAIF) \hfill 2020
+%     \item Conference on Neural Information Processing Systems (NeurIPS) \hfill 2020
+%   % \item ICLR Workshop on Debugging Machine Learning Models \hfill 2019
+% %    \item AAAI/ACM Conference on AI, Ethics and Society (AIES) Student Programs \hfill 2019
+% \end{innerlist}
+
+% \textbf{Reviewer}
+% \begin{innerlist}
+%     \item IEEE Transactions on Artificial Intelligence (TAI)
+%     \item Artificial Intelligence Journal (AIJ)
+% \end{innerlist}
+
+
+\section{Work Experience}
+
+Writing Tutor, \textbf{PPLS Skills Centre}, Edinburgh, UK \hfill  September 2023 -- September 2025
+\begin{innerlist}
+    \item Guided students through editing process for various writing projects, from coursework to dissertations.
+\end{innerlist}
+
+Open Research Facilitator, \textbf{PPLS Open Science}, Edinburgh, UK \hfill  October 2023 -- August 2025
+\begin{innerlist}
+    \item Facilitated open science practices within ongoing research at the School of Philosophy, Psychology, and Language Sciences by hosting information sessions and holding appointments.
+    \item Initiated Peer Code Review program to encourage reproducibility, auditability, and other best practices.
+\end{innerlist}
+
+STEAM Coordinator, \textbf{Scripps College Academy}, Claremont, CA \hfill  January 2021 -- May 2021
+\begin{innerlist}
+    \item Implemented program for >80 underrepresented high schoolers in Los Angeles and Inland Empire area to provide access to experiences in science, technology, engineering, art, and mathematics.
+\end{innerlist}
+
+% Facilities Manager \& Barista, \textbf{The Motley Coffeehouse}, Claremont, CA \hfill  Aug 2017 -- March 2020
+% \begin{innerlist}
+%     \item Communicated regularly with suppliers to keep machines and facility in good working condition
+%     \item Organized and supervised barista deep cleaning days
+%     \item Repriced inventory and planned a remodel of the coffeehouse interior based on sustainable and efficient business practices.
+% \end{innerlist}
+
+\section{Skills}
+\textit{Coursework}
+\begin{innerlist}
+    \item Cognitive Neuroscience, Artificial Intelligence, Nonlinear Data Analytics, Probability, Algorithms
+\end{innerlist}
+
+% , Data Structures and Program Development
+
+\textit{Programming}
+\begin{innerlist}
+    \item Python, R, Linux, Docker, Tensorflow, Javascript (jsPsych), Matlab, C++, Java, HTML/CSS
+\end{innerlist}
+
+\textit{Software}
+\begin{innerlist}
+    \item Pavlovia, Amazon Mechanical Turk, RedCap, Microsoft Office, Google Suite
+\end{innerlist}
+
+\textit{Program Management}
+\begin{innerlist}
+    \item Agile, Scrum, Kanban, Waterfall
+\end{innerlist}
+
+% \textit{Languages}
+% \begin{innerlist}
+%     \item English (native), Gujarati (fluent), Spanish (proficient)
+% \end{innerlist}
+
+\section{Fellowships, Awards, and Honors}
+\textbf{UKRI Economic and Social Research Council Doctoral Training Studentship} \hfill 2022 -- 2025 \\
+\textbf{Scripps College Humanities Institute Fellowship} \hfill 2021 \\
+\textbf{Scripps Success Grant Scholarship} \hfill 2020 -- 2021 \\
+\textbf {NSF REU at the Center for the Study of Language and Information} (Award \#1950223) \hfill 2020 \\
+\textbf {Scripps Student Conference Travel Fund} \hfill 2019\\
+\textbf{NSF REU in Cognitive Science and Neuroimaging} (Award \#1757390)  \hfill 2019\\
+\textbf{Scripps College Dean's List} \hfill 2018, 2020\\
+
+% \textbf {Public Leadership Education Network Women in Stem Policy Seminar} \hfill 2020 \\
+% \textbf{Goldwater Scholarship Recommendee} \hfill 2018\\  
+% \textbf{National Science Honors Society} \hfill 2017\\
+% \textbf{National Honors Society} \hfill 2017\\
+% \textbf{Girl Scouts Gold Award} \hfill 2017
+
+% \section{Volunteer Experience}
+% Developer, \textbf{Refresh Bolivia: Com{\'e}tas}, Claremont, CA \hfill  Aug 2019 -- March 2020
+% \begin{innerlist}
+%     \item Designed a 6-week workshop teaching principles of computer science for recently incarcerated individuals in Bolivia to prepare them for and connect them with stable job opportunities.
+% \end{innerlist}
+
+% Tutor, \textbf{Refugee Advocacy Network}, Claremont, CA \hfill  Aug 2019 -- March 2020
+% \begin{innerlist}
+%     \item Helped recent American refugees with English, assisting with job applications and homework.
+% \end{innerlist}
+
+\end{document}
