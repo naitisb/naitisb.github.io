@@ -28,8 +28,7 @@ AI and LLM evaluation
 * AI Expert Evaluator, [Outlier](https://outlier.ai/) & [Alignerr](https://alignerr.com/)  
   * October 2025 – Present  
   * Evaluate frontier language models on reasoning, coding, and safety-relevant prompts against structured rubrics, with emphasis on careful judgment, failure analysis, and efficient human–AI interaction  
-  * Produce high-quality expert judgments and written rationales in domains requiring consistency, reliability, and defensible evaluation criteria  
-  * Ongoing writing on RAG and LLM evaluation, including a Substack series translating current evaluation practices and implementation trade-offs for technical and cross-functional audiences
+  * Produce high-quality expert judgments and written rationales in domains requiring consistency, reliability, and defensible evaluation criteria 
 
 Professional and research experience
 ======
