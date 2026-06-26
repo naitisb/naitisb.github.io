@@ -141,4 +141,4 @@ Skills
 * **Research tools & methods**: JavaScript (jsPsych), Pavlovia, Prolific, Qualtrics, RedCap, fMRIPrep, FSL, MRtrix3, ANTs, experimental design, statistical testing, preregistration, ethics review, eye-tracking, neuroimaging  
 * **Project management**: Notion, Agile workflows, Jira/Atlassian, Kanban, stakeholder coordination, workshops, technical onboarding  
 * **Languages**: English (native), Spanish (fluent), Gujarati (fluent)  
-* **Interests**: Specialty coffee (roasting, brewing); wild swimming; art and culture  
+* **Interests**: Specialty coffee; wild swimming 
