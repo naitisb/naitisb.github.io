@@ -17,7 +17,7 @@ Education
 ======
 * M.Sc. in Psychological Research, Awarded With Merit, [University of Edinburgh](https://www.ed.ac.uk/), 2022–2025 
   * UKRI ESRC Doctoral Training Partnership Studentship (Psychology), 2022–2025  
-  * Dissertation (2023): *Studying the distinct functions of theory of mind brain regions during movie-viewing*  
+  * Dissertation (2022-2023): *Studying the distinct functions of theory of mind brain regions during movie-viewing*  
   * Doctoral-track research project (2023-2025): *Structural and Functional Neural Mechanisms of Theory of Mind Development*
 * B.A. in Computer Science (Harvey Mudd College) and Neuroscience (Keck Science), Awarded Cum Laude, [Scripps College](https://www.scrippscollege.edu/), 2017–2021  
   * Thesis: *Uncovering Object Categories in Infant Views*  
