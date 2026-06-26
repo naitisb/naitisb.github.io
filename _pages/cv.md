@@ -77,17 +77,6 @@ Summer Research Intern, [University of Minnesota](https://twin-cities.umn.edu/)
 * Supervisors: [Dr. Katherine E. M. Tregillus](http://engellab.psych.umn.edu/people/katherine-tregillus), [Dr. Stephen A. Engel](https://cla.umn.edu/about/directory/profile/engel)  
   * Implemented and evaluated supervised machine learning methods on functional MRI activation patterns to predict perceived color and characterize plasticity in illusory color perception (McCullough Effect).
 
-Publications and presentations
-======
-* Jiménez-Sánchez, L., Thye, M., Abel, S., **Bhatt, N. S.**, Bonich, C., Luo, M., Mckinnon, K., Rubin, R., Skelton, J., Smikle, R., Vaher, K., & Richardson, H. (2025). Behind the scenes: Using movies to study the human brain. *Frontiers for Young Minds*.  
-* Nussenbaum, K., Martin, R. E., Maulhardt, S., Yang, Y., Bizzell-Hatcher, G., **Bhatt, N. S.**, Scheuplein, M., Rosenbaum, G. M., O'Doherty, J. P., Cockburn, J., & Hartley, C. A. (2023). [Novelty and uncertainty differentially drive exploration across development](https://doi.org/10.7554/eLife.84260). *eLife*.  
-* Zettersten, M., ..., **Bhatt, N. S.**, Bergey, C. A., & Frank, M. C. (2022). [Peekbank: An open, large-scale repository for developmental eye-tracking data of children's word recognition](https://link.springer.com/article/10.3758/s13428-022-01906-4). *Behavior Research Methods*.  
-* **Bhatt, N. S.** (2021). [Uncovering Object Categories in Infant Views](https://scholarship.claremont.edu/scripps_theses/1664). *Scripps Senior Theses*.  
-* Long, B., Kachergis, G., **Bhatt, N. S.**, & Frank, M. C. (2021). [Characterizing the object categories two children see and interact with in a dense dataset of naturalistic visual experience](https://doi.org/10.31234/osf.io/nv47t). *Proceedings of the 43rd Annual Conference of the Cognitive Science Society*.  
-* Zettersten, M., Bergey, C. A., **Bhatt, N. S.**, ..., & Frank, M. C. (2021). [Peekbank: Exploring children's word recognition through an open, large-scale repository for developmental eye-tracking data](https://doi.org/10.31234/osf.io/ep693). *Proceedings of the 43rd Annual Conference of the Cognitive Science Society*.  
-* **Bhatt, N. S.**, Tregillus, K. E. M., & Engel, S. A. (2019). Classification Analyses of fMRI Data Predict Perceived Color. [Poster](https://github.com/naitisb/naitisb.github.io/blob/master/files/Bhatt_Naiti_LSSURP_Poster.pdf) presented at [Bay Area Vision Research Day (BAVRD)](https://vision.berkeley.edu/events/bavrd), Berkeley, California.  
-* **Bhatt, N. S.**, Tregillus, K. E. M., & Engel, S. A. (2019). Classification Analyses of fMRI Data Predict Perceived Color. [Poster](https://github.com/naitisb/naitisb.github.io/blob/master/files/Bhatt_Naiti_LSSURP_Poster.pdf) presented at [Southern California Conference for Undergraduate Research (SCCUR)](https://www.sccur.org/sccur/fall_2019_conference/poster_session_2/7/), San Marcos, California.  
-
 Teaching experience
 ======
 * Guest Lecturer, Introduction to AI Program 
@@ -101,6 +90,18 @@ Teaching experience
   * *Computability and Logic* (CSCI-081) with [Dr. George Montañez](https://www.cs.hmc.edu/~montanez/), Spring 2020  
 * Teaching Assistant, [Pomona College](https://www.pomona.edu/)  
   * *Calculus II w/ Applications to Science* (MATH-031S) with Dr. Blerta Shtylla, Autumn 2019  
+
+
+Publications and presentations
+======
+* Jiménez-Sánchez, L., Thye, M., Abel, S., **Bhatt, N. S.**, Bonich, C., Luo, M., Mckinnon, K., Rubin, R., Skelton, J., Smikle, R., Vaher, K., & Richardson, H. (2025). Behind the scenes: Using movies to study the human brain. *Frontiers for Young Minds*.  
+* Nussenbaum, K., Martin, R. E., Maulhardt, S., Yang, Y., Bizzell-Hatcher, G., **Bhatt, N. S.**, Scheuplein, M., Rosenbaum, G. M., O'Doherty, J. P., Cockburn, J., & Hartley, C. A. (2023). [Novelty and uncertainty differentially drive exploration across development](https://doi.org/10.7554/eLife.84260). *eLife*.  
+* Zettersten, M., ..., **Bhatt, N. S.**, Bergey, C. A., & Frank, M. C. (2022). [Peekbank: An open, large-scale repository for developmental eye-tracking data of children's word recognition](https://link.springer.com/article/10.3758/s13428-022-01906-4). *Behavior Research Methods*.  
+* **Bhatt, N. S.** (2021). [Uncovering Object Categories in Infant Views](https://scholarship.claremont.edu/scripps_theses/1664). *Scripps Senior Theses*.  
+* Long, B., Kachergis, G., **Bhatt, N. S.**, & Frank, M. C. (2021). [Characterizing the object categories two children see and interact with in a dense dataset of naturalistic visual experience](https://doi.org/10.31234/osf.io/nv47t). *Proceedings of the 43rd Annual Conference of the Cognitive Science Society*.  
+* Zettersten, M., Bergey, C. A., **Bhatt, N. S.**, ..., & Frank, M. C. (2021). [Peekbank: Exploring children's word recognition through an open, large-scale repository for developmental eye-tracking data](https://doi.org/10.31234/osf.io/ep693). *Proceedings of the 43rd Annual Conference of the Cognitive Science Society*.  
+* **Bhatt, N. S.**, Tregillus, K. E. M., & Engel, S. A. (2019). Classification Analyses of fMRI Data Predict Perceived Color. [Poster](https://github.com/naitisb/naitisb.github.io/blob/master/files/Bhatt_Naiti_LSSURP_Poster.pdf) presented at [Bay Area Vision Research Day (BAVRD)](https://vision.berkeley.edu/events/bavrd), Berkeley, California.  
+* **Bhatt, N. S.**, Tregillus, K. E. M., & Engel, S. A. (2019). Classification Analyses of fMRI Data Predict Perceived Color. [Poster](https://github.com/naitisb/naitisb.github.io/blob/master/files/Bhatt_Naiti_LSSURP_Poster.pdf) presented at [Southern California Conference for Undergraduate Research (SCCUR)](https://www.sccur.org/sccur/fall_2019_conference/poster_session_2/7/), San Marcos, California.  
 
 Additional work experience
 ======
