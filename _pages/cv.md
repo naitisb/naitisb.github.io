@@ -21,7 +21,7 @@ Education
   * Doctoral-track research project (2023-2025): *Structural and Functional Neural Mechanisms of Theory of Mind Development*
 * B.A. in Computer Science (Harvey Mudd College) and Neuroscience (Keck Science), Awarded Cum Laude, [Scripps College](https://www.scrippscollege.edu/), 2017–2021  
   * Thesis: *Uncovering Object Categories in Infant Views*  
-  * Selected honors: University of Minnesota NSF REU Scholarship in Neuroimaging for Cognitive Neuroscience (Top 10, 15%), Stanford University NSF REU at CSLI (Top 12, 1.8%), Scripps College Humanities Institute Fellowship, Scripps Success Grant Scholarship
+  * Selected honors: University of Minnesota NSF REU Scholarship in Neuroimaging for Cognitive Neuroscience, Stanford University NSF REU at CSLI, Scripps College Humanities Institute Fellowship, Scripps Success Grant Scholarship
 
 AI and LLM evaluation
 ======
