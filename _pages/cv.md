@@ -15,10 +15,10 @@ Computational cognitive scientist and research software engineer, with experienc
 
 Education
 ======
-* M.Sc. in Psychological Research, Awarded With Merit, [University of Edinburgh](https://www.ed.ac.uk/), 2022–2025  
+* M.Sc. in Psychological Research, Awarded With Merit, [University of Edinburgh](https://www.ed.ac.uk/), 2022–2025 
   * UKRI ESRC Doctoral Training Partnership Studentship (Psychology), 2022–2025  
   * Dissertation: *Studying the distinct functions of theory of mind brain regions during movie-viewing*  
-  * Doctoral research in Psychology (09/2023–10/2025): *Structural and Functional Neural Mechanisms of Theory of Mind Development*
+  * Doctoral-track researcher in Psychology (2023–2025): *Structural and Functional Neural Mechanisms of Theory of Mind Development*
 * B.A. in Computer Science (Harvey Mudd College) and Neuroscience (Keck Science), Awarded Cum Laude, [Scripps College](https://www.scrippscollege.edu/), 2017–2021  
   * Thesis: *Uncovering Object Categories in Infant Views*  
   * Selected honors: University of Minnesota NSF REU Scholarship in Neuroimaging for Cognitive Neuroscience (Top 10, 15%), Stanford University NSF REU at CSLI (Top 12, 1.8%), Scripps College Humanities Institute Fellowship, Scripps Success Grant Scholarship
