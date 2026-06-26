@@ -27,8 +27,8 @@ AI and LLM evaluation
 ======
 * AI Expert Evaluator, [Outlier](https://outlier.ai/) & [Alignerr](https://alignerr.com/)  
   * October 2025 – Present  
-  * Evaluate frontier language models on reasoning, coding, and safety-relevant prompts against structured rubrics, with emphasis on careful judgment, failure analysis, and efficient human–AI interaction  
-  * Produce high-quality expert judgments and written rationales in domains requiring consistency, reliability, and defensible evaluation criteria 
+  * Evaluate frontier language models on reasoning, coding, and safety-relevant prompts against structured rubrics, with emphasis on careful judgment, failure analysis, and efficient human–AI interaction.
+  * Produce high-quality expert judgments and written rationales in domains requiring consistency, reliability, and defensible evaluation criteria. 
 
 Professional experience
 ======
@@ -36,52 +36,48 @@ Professional experience
 Postgraduate Researcher, [University of Edinburgh](https://www.ed.ac.uk/)
 * September 2023 – October 2025  
 * Supervisor: [Dr. Hilary Richardson](https://richardsonlab.ppls.ed.ac.uk/)  
-  * Owned end-to-end execution of two large-scale MRI pipelines (structural and functional) across 60 participants, from infrastructure design through analysis and delivery  
-  * Designed scalable, reproducible workflows adopted across five concurrent lab projects, reducing engineering overhead and standardizing quality and documentation across teams  
-  * Led two hackathons and three workshops introducing these workflows; enabled nine new experiments to launch with minimal additional engineering support and served as primary technical onboarding contact
+  * Owned end-to-end execution of two large-scale MRI pipelines (diffusion and functional), from infrastructure design through analysis and delivery.
+  * Designed scalable, reproducible workflows adopted across concurrent lab projects, reducing engineering overhead and standardizing quality and documentation across teams.
+  * Led several hackathons and workshops introducing new workflows; enabled new experiments to launch with minimal additional engineering support.
 
 Open Research Facilitator, [PPLS Open Science](https://www.ed.ac.uk/ppls/research/research-integrity-and-open-science), University of Edinburgh
 * August 2023 – October 2025
 * Supervisor: [Dr. Neil Bramley](https://www.bramleylab.ppls.ed.ac.uk/)  
-  * Acted as open science adviser across three departments, providing 1:1 consultations and group trainings on preregistration, code sharing, and reproducible workflows  
+  * Acted as open science adviser across three departments, providing 1:1 consultations and group trainings on preregistration, code sharing, and reproducible workflows.
   * Built and launched a school-wide program to encourage best practices for transparency and reproducibility, conducting [various levels of code review](https://pplsopenresearch.github.io/docs/codeReview.html) for researchers with publication-ready projects. 
 
 Junior Research Associate, [New York University](https://www.nyu.edu/)
 * May 2021 – August 2022  
 * Supervisor: [Dr. Catherine A. Hartley](https://as.nyu.edu/content/nyu-as/as/faculty/catherine-alexandra-hartley.html)  
-  * Ran cross-functional operations for an 18-person lab, including a \$100k+ annual budget, ethics compliance, and codebase maintenance across five concurrent projects  
-  * Coordinated multi-method data collection across 122 participants (online experiments, eye-tracking, and fMRI), managing timelines and stakeholder relationships  
-  * Co-authored a paper in *eLife* on developmental changes in exploration driven by novelty and uncertainty
+  * Ran cross-functional operations for a high-impact lab, managing budget, ethics compliance, and codebase across several concurrent projects.
+  * Coordinated multi-method data collection across participants (online experiments, eye-tracking, and fMRI), managing timelines and stakeholder relationships.
 
 Software Engineer (Part-Time), [Stanford University](https://www.stanford.edu/)
 * May 2021 – November 2021  
 * Supervisor: [Dr. Hyowon Gweon](https://web.stanford.edu/~hyo/)  
-  * Rebuilt participant database integration to connect RedCap with new scripts, supporting 500+ active participants  
-  * Delivered a scalable system that reduced administrative overhead and eliminated the need for additional operations headcount
+  * Rebuilt participant database integration to connect with RedCap.
+  * Delivered a scalable system reducing administrative overhead and eliminating the need for additional operations headcount.
 
 Contributing Developer / Data Curator, [Peekbank Project](https://peekbank.stanford.edu/)
 * May 2020 – August 2021  
 * Supervisors: [Dr. Martin Zettersten](https://martinzettersten.com/), [Dr. Michael C. Frank](https://web.stanford.edu/~mcfrank/)  
-  * Imported and standardized developmental eye-tracking datasets from 12+ independent labs into a large-scale, open repository  
-  * Managed quality checks, documentation, and cross-team alignment, enabling cross-study comparisons that led to publication in *Behavior Research Methods*
+  * Imported and standardized developmental eye-tracking datasets from several independent labs into a large-scale, open repository.
+  * Managed quality checks and documentation, enabling cross-study comparisons.
 
 Undergraduate Thesis Researcher, [Scripps College](https://www.scrippscollege.edu/) & [Stanford University](https://www.stanford.edu/)
 * August 2020 – May 2021  
 * Supervisors: [Dr. Bria Long](https://www.brialong.com/), [Dr. Michael C. Frank](https://web.stanford.edu/~mcfrank/), [Dr. John G. Milton](https://www.scrippscollege.edu/academics/faculty/profile/john-milton)  
-  * Built computer vision tools (including Detectron2-based models) to recognize and categorize objects in infant egocentric video frames, linking visual experience to early word learning  
-  * Published findings in the Proceedings of the Cognitive Science Society and presented work at institutional and national venues
+  * Built computer vision tools (including Detectron2-based models) to recognize and categorize objects in infant egocentric video frames, linking visual experience to early word learning.
 
 Summer Research Intern, [Stanford University](https://www.stanford.edu/)
 * June 2020 – August 2020  
 * Supervisors: [Dr. Bria Long](https://www.brialong.com/), [Dr. Michael C. Frank](https://web.stanford.edu/~mcfrank/)  
-  * Participated in the CSLI NSF REU program focused on language and cognition  
-  * Crowdsourced labels via Amazon Mechanical Turk and SageMaker for infant egocentric and naturalistic video frames to characterize early visual experiences
+  * Crowdsourced labels via Amazon Mechanical Turk and AWS SageMaker for infant egocentric and naturalistic video frames to characterize early visual experiences.
 
 Summer Research Intern, [University of Minnesota](https://twin-cities.umn.edu/)
 * May 2019 – August 2019  
 * Supervisors: [Dr. Katherine E. M. Tregillus](http://engellab.psych.umn.edu/people/katherine-tregillus), [Dr. Stephen A. Engel](https://cla.umn.edu/about/directory/profile/engel)  
-  * Took part in a 10-week NSF REU focusing on MRI and EEG neuroimaging  
-  * Evaluated classifiers on fMRI activation patterns to predict perceived color and characterize plasticity in illusory color perception (McCullough Effect)
+  * Implemented and evaluated supervised machine learning methods on functional MRI activation patterns to predict perceived color and characterize plasticity in illusory color perception (McCullough Effect).
 
 Publications and presentations
 ======
@@ -136,9 +132,9 @@ Fellowships, awards, and honors
 
 Skills
 ======
-* **Programming & evaluation**: Python, R, Linux, Git, Docker, HPC/SLURM, evaluation rubrics, Inspect, RAG, reproducible pipelines  
-* **AI/ML**: LLM evaluation, code and reasoning assessment, safety-relevant prompt evaluation, Detectron2, TensorFlow, AWS SageMaker annotation, Amazon Mechanical Turk data labeling  
-* **Research tools & methods**: JavaScript (jsPsych), Pavlovia, Prolific, Qualtrics, RedCap, fMRIPrep, FSL, MRtrix3, ANTs, experimental design, statistical testing, preregistration, ethics review, eye-tracking, neuroimaging  
-* **Project management**: Notion, Agile workflows, Jira/Atlassian, Kanban, stakeholder coordination, workshops, technical onboarding  
+* **Programming & evaluation**: Python, R, Linux, Git, Docker, HPC/SLURM, evaluation rubrics, Inspect, reproducible pipelines  
+* **AI/ML**: LLM evaluation, safety-relevant model and prompt evaluation, Detectron2, TensorFlow, AWS SageMaker, Amazon Mechanical Turk
+* **Research tools & methods**: JavaScript (jsPsych), Pavlovia, Prolific, Qualtrics, RedCap, fMRIPrep, FSL, MRtrix3, ANTs, experimental design, statistical testing, preregistration, ethics review, eye-tracking  
+* **Project management**: Notion, Agile workflows, Jira/Atlassian, Kanban
 * **Languages**: English (native), Spanish (fluent), Gujarati (fluent)  
 * **Interests**: Specialty coffee; wild swimming 
