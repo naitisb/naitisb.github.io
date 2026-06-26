@@ -11,7 +11,7 @@ redirect_from:
 
 Summary
 ======
-Computational cognitive scientist and research software engineer. Builds evaluation workflows, reproducible ML pipelines, and research infrastructure; targeting LLM evaluation, research scientist, and research software engineering roles.
+Computational cognitive scientist and research software engineer, with experience in developmental cogntiive neuroscience. Excited to continue building evaluation workflows, reproducible ML pipelines, and research infrastructure steered by public interests; targeting LLM evaluation, research scientist, and research software engineering roles.
 
 Education
 ======
@@ -96,6 +96,9 @@ Publications and presentations
 
 Teaching experience
 ======
+* Workshop Facilitator, Science Outreach, Spring 2024
+  * *Brain-Inspired AI ([slides](files/BrainInspired_AI)
+  * *Applications of AI: Cognitive Science (slides)
 * Lab Teaching Assistant, [University of Edinburgh](https://www.ed.ac.uk/)  
   * *Data Analysis for Psychology in R 1* (PSYL08013) with [Dr. Umberto Noe](https://www.ed.ac.uk/profile/umberto-noe), Autumn 2023 – Spring 2025  
   * *Psychology 1A/B* with Dr. Hannah Cornish, Autumn 2023 – Spring 2024  
