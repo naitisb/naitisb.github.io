@@ -23,15 +23,13 @@ Education
   * Thesis: *Uncovering Object Categories in Infant Views*  
   * Selected honors: University of Minnesota NSF REU Scholarship in Neuroimaging for Cognitive Neuroscience, Stanford University NSF REU at CSLI, Scripps College Humanities Institute Fellowship, Scripps Success Grant Scholarship
 
-AI and LLM evaluation
+Professional experience
 ======
+
 * AI Expert Evaluator, [Outlier](https://outlier.ai/) & [Alignerr](https://alignerr.com/)  
   * October 2025 – Present  
   * Evaluate frontier language models on reasoning, coding, and safety-relevant prompts against structured rubrics, with emphasis on careful judgment, failure analysis, and efficient human–AI interaction.
   * Produce high-quality expert judgments and written rationales in domains requiring consistency, reliability, and defensible evaluation criteria. 
-
-Professional experience
-======
 
 Postgraduate Researcher, [University of Edinburgh](https://www.ed.ac.uk/)
 * September 2023 – October 2025  
