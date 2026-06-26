@@ -30,7 +30,7 @@ AI and LLM evaluation
   * Evaluate frontier language models on reasoning, coding, and safety-relevant prompts against structured rubrics, with emphasis on careful judgment, failure analysis, and efficient human–AI interaction  
   * Produce high-quality expert judgments and written rationales in domains requiring consistency, reliability, and defensible evaluation criteria 
 
-Professional and research experience
+Professional experience
 ======
 
 Postgraduate Researcher, [University of Edinburgh](https://www.ed.ac.uk/)
@@ -96,9 +96,9 @@ Publications and presentations
 
 Teaching experience
 ======
-* Workshop Facilitator, Science Outreach, Spring 2024
-  * *Brain-Inspired AI* ([slides](https://naitisb.github.io/files/BrainInspired_AI.pdf))
-  * *Applications of AI: Cognitive Science* ([slides](https://naitisb.github.io/files/ApplicationsAI_CognitiveScience.pdf))
+* Guest Lecturer, Introduction to AI Program 
+  * *Brain-Inspired AI* ([slides](https://naitisb.github.io/files/BrainInspired_AI.pdf)), Spring 2024
+  * *Applications of AI: Cognitive Science* ([slides](https://naitisb.github.io/files/ApplicationsAI_CognitiveScience.pdf)), Spring 2024
 * Lab Teaching Assistant, [University of Edinburgh](https://www.ed.ac.uk/)  
   * *Data Analysis for Psychology in R 1* (PSYL08013) with [Dr. Umberto Noe](https://www.ed.ac.uk/profile/umberto-noe), Autumn 2023 – Spring 2025  
   * *Psychology 1A/B* with Dr. Hannah Cornish, Autumn 2023 – Spring 2024  
