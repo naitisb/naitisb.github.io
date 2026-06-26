@@ -97,8 +97,8 @@ Publications and presentations
 Teaching experience
 ======
 * Workshop Facilitator, Science Outreach, Spring 2024
-  * *Brain-Inspired AI ([slides](/files/BrainInspired_AI.pdf))
-  * *Applications of AI: Cognitive Science ([slides](/files/ApplicationsAI_CognitiveScience.pdf))
+  * *Brain-Inspired AI ([slides](naitisb.github.io/files/BrainInspired_AI.pdf))
+  * *Applications of AI: Cognitive Science ([slides](naitisb.github.io/files/ApplicationsAI_CognitiveScience.pdf))
 * Lab Teaching Assistant, [University of Edinburgh](https://www.ed.ac.uk/)  
   * *Data Analysis for Psychology in R 1* (PSYL08013) with [Dr. Umberto Noe](https://www.ed.ac.uk/profile/umberto-noe), Autumn 2023 – Spring 2025  
   * *Psychology 1A/B* with Dr. Hannah Cornish, Autumn 2023 – Spring 2024  
