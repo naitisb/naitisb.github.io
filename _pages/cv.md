@@ -41,10 +41,10 @@ Postgraduate Researcher, [University of Edinburgh](https://www.ed.ac.uk/)
   * Led two hackathons and three workshops introducing these workflows; enabled nine new experiments to launch with minimal additional engineering support and served as primary technical onboarding contact
 
 Open Research Facilitator, [PPLS Open Science](https://www.ed.ac.uk/ppls/research/research-integrity-and-open-science), University of Edinburgh
-* August 2023 – October 2025  
-  * Acted as primary open science adviser across three departments, providing 1:1 consultations and group trainings on preregistration, code sharing, and reproducible workflows  
-  * Built and launched a school-wide peer-to-peer code review program adopted by eight research groups, directly contributing to increased preregistration and three collaborative publications  
-  * Managed 80+ stakeholder engagements (workshops, office hours) and supported 26 first authors in adopting preregistration and reproducible practices for the first time
+* August 2023 – October 2025
+* Supervisor: [Dr. Neil Bramley](https://www.bramleylab.ppls.ed.ac.uk/)  
+  * Acted as open science adviser across three departments, providing 1:1 consultations and group trainings on preregistration, code sharing, and reproducible workflows  
+  * Built and launched a school-wide program to encourage best practices for transparency and reproducibility, conducting [various levels of code review](https://pplsopenresearch.github.io/docs/codeReview.html) for researchers with publication-ready projects. 
 
 Junior Research Associate, [New York University](https://www.nyu.edu/)
 * May 2021 – August 2022  
