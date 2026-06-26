@@ -79,7 +79,7 @@ Summer Research Intern, [University of Minnesota](https://twin-cities.umn.edu/)
 
 Teaching experience
 ======
-* Guest Lecturer, Introduction to AI Program 
+* Guest Lecturer, Bluebridge Education
   * *Brain-Inspired AI* ([slides](https://naitisb.github.io/files/BrainInspired_AI.pdf)), Spring 2024
   * *Applications of AI: Cognitive Science* ([slides](https://naitisb.github.io/files/ApplicationsAI_CognitiveScience.pdf)), Spring 2024
 * Lab Teaching Assistant, [University of Edinburgh](https://www.ed.ac.uk/)  
