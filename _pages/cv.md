@@ -132,7 +132,7 @@ Fellowships, awards, and honors
 Skills
 ======
 * **Programming & evaluation**: Python, R, Linux, Git, Docker, HPC/SLURM, evaluation rubrics, Inspect, reproducible pipelines  
-* **AI/ML**: LLM evaluation, safety-relevant model and prompt evaluation, Detectron2, TensorFlow, AWS SageMaker, Amazon Mechanical Turk
+* **AI/ML**: Detectron2, TensorFlow, AWS SageMaker, Amazon Mechanical Turk, safety-relevant model and prompt evaluation
 * **Research tools & methods**: JavaScript (jsPsych), Pavlovia, Prolific, Qualtrics, RedCap, fMRIPrep, FSL, MRtrix3, ANTs, experimental design, statistical testing, preregistration, ethics review, eye-tracking  
 * **Project management**: Notion, Agile workflows, Jira/Atlassian, Kanban
 * **Languages**: English (native), Spanish (fluent), Gujarati (fluent)  
