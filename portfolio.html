@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var stored = localStorage.getItem("theme");
+  var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio · Naiti S. Bhatt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="portfolio">
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Naiti S. Bhatt</a>
+    <div class="nav-right">
+      <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="presentations.html">Presentations</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="http://naitisbwriting.blogspot.com/" target="_blank" rel="noopener">Blog ↗</a></li>
+    </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:16px;">
+    <div class="wrap">
+      <span class="eyebrow">GitHub Projects</span>
+      <h1>Portfolio</h1>
+      <p class="lede">A selection of research software and applied engineering projects, spanning neuroimaging pipelines, experiment tooling, and personal apps. See more on <a href="https://github.com/naitisb" target="_blank" rel="noopener">GitHub</a>.</p>
+    </div>
+  </section>
+
+  <section style="border-top:none; padding-top:0;">
+    <div class="wrap">
+      <div class="grid">
+
+        <div class="card card-accent-green">
+          <h3>PDCP: Brainhack Funcstruct</h3>
+          <p class="meta">Jupyter / Neuroimaging &middot; 2026</p>
+          <p class="desc">Functional and structural connectivity analysis pipeline examining pregnancy during the COVID-19 pandemic and child neurobehavioural development, built collaboratively during a Brainhack event.</p>
+          <div>
+            <span class="tag">Neuroimaging</span>
+            <span class="tag">Reproducibility</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/naitisb/PDCP-brainhack-funcstruct-2026" target="_blank" rel="noopener">Repository ↗</a>
+          </div>
+        </div>
+
+        <div class="card card-accent-pink">
+          <h3>Theory of Mind Booklet Assessment</h3>
+          <p class="meta">JavaScript &middot; 2026</p>
+          <p class="desc">Interactive, web-based digital implementation of a Theory of Mind booklet assessment for ages 3&ndash;12, integrated with Qualtrics and Prolific for online data collection.</p>
+          <div>
+            <span class="tag alt">Developmental Research</span>
+            <span class="tag alt">jsPsych / Qualtrics</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/naitisb/tom-booklet-assessment" target="_blank" rel="noopener">Repository ↗</a>
+          </div>
+        </div>
+
+        <div class="card card-accent-green">
+          <h3>Family Goals</h3>
+          <p class="meta">TypeScript &middot; 2026</p>
+          <p class="desc">Web and iOS app for tracking daily and weekly goals as a family, rebuilt (v2) with a modern TypeScript stack for improved reliability and cross-platform support.</p>
+          <div>
+            <span class="tag">Full-Stack</span>
+            <span class="tag">Mobile</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/naitisb/family-goals-v2" target="_blank" rel="noopener">Repository ↗</a>
+          </div>
+        </div>
+
+        <div class="card card-accent-pink">
+          <h3>Mobile Attention Manifold</h3>
+          <p class="meta">Jupyter Notebook &middot; Computer Vision</p>
+          <p class="desc">Exploratory analysis of attention and visual manifolds using computer vision models, extending work on egocentric infant view categorization.</p>
+          <div>
+            <span class="tag alt">Computer Vision</span>
+            <span class="tag alt">Detectron2</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/naitisb/MobileAttentionManifold" target="_blank" rel="noopener">Repository ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>&copy; <span id="year"></span> Naiti S. Bhatt</span>
+    <div class="social-row">
+      <a href="https://github.com/naitisb" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/naiti/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=C0-z5VcAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://orcid.org/0000-0002-9592-2483" target="_blank" rel="noopener">ORCID</a>
+      <a href="mailto:naitibhatt@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
