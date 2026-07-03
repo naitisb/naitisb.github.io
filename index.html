@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var stored = localStorage.getItem("theme");
+  var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naiti S. Bhatt</title>
+<meta name="description" content="Computational cognitive scientist and research software engineer working on AI evaluation, reproducible ML pipelines, and developmental cognitive neuroscience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Naiti S. Bhatt</a>
+    <div class="nav-right">
+      <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="presentations.html">Presentations</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="http://naitisbwriting.blogspot.com/" target="_blank" rel="noopener">Blog ↗</a></li>
+    </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Cognitive Science &times; AI Evaluation</span>
+        <h1>Naiti S. Bhatt</h1>
+        <p class="lede">Computational cognitive scientist and research software engineer with a background in developmental cognitive neuroscience. I build evaluation workflows, reproducible ML pipelines, and research infrastructure &mdash; currently focused on how insights from human learning and cognition can help us understand, evaluate, and shape AI systems.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="cv.html">View CV</a>
+          <a class="btn btn-outline" href="portfolio.html">See Portfolio</a>
+          <a class="btn btn-outline" href="contact.html">Get in Touch</a>
+        </div>
+      </div>
+      <img class="hero-avatar" src="images/profile_picture_2022.jpg" alt="Portrait of Naiti S. Bhatt">
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Focus Areas</span>
+        <h2>What I work on</h2>
+      </div>
+      <div class="grid">
+        <div class="card card-accent-pink">
+          <h3>LLM Evaluation &amp; Alignment</h3>
+          <p class="desc">Evaluating frontier models on reasoning, coding, and safety-relevant prompts against structured rubrics, with an emphasis on careful judgment and failure analysis.</p>
+        </div>
+        <div class="card card-accent-green">
+          <h3>Research Software Engineering</h3>
+          <p class="desc">Designing scalable, reproducible pipelines using computational and statistical modeling to analyze human-subjects data (diffusion &amp; functional MRI, behavioral questionnaires, eye-tracking, egocentric image comprehension).</p>
+        </div>
+        <div class="card card-accent-pink">
+          <h3>Developmental Cognitive Neuroscience</h3>
+          <p class="desc">Studying neurocognitive processes underlying skill (object understanding, decision-making, and social reasoning) development across childhood.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Background</span>
+        <h2>A bit more about me</h2>
+      </div>
+      <p>I completed my masters at the Department of Psychology at the University of Edinburgh, where I characterized the neural mechanisms of theory of mind development by building reproducible analysis pipeline for analyzing functional and diffusion MRI. Before Edinburgh, I graduated from Scripps College with majors in Computer Science and Neuroscience. For my undergraduate thesis, I trained and tested computer vision models to characterize early object learning using egocentric infant video frames.</p>
+      <p>I grew up in Basking Ridge, New Jersey. Outside of research, I roast and brew specialty coffee, chase sunrises and sunsets, and swim in international waters (19 countries &amp; 30 US states so far, from 4&deg;C to 40&deg;C).</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>&copy; <span id="year"></span> Naiti S. Bhatt</span>
+    <div class="social-row">
+      <a href="https://github.com/naitisb" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/naiti/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=C0-z5VcAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://orcid.org/0000-0002-9592-2483" target="_blank" rel="noopener">ORCID</a>
+      <a href="mailto:naitibhatt@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

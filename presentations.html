@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var stored = localStorage.getItem("theme");
+  var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presentations · Naiti S. Bhatt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="presentations">
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Naiti S. Bhatt</a>
+    <div class="nav-right">
+      <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="presentations.html" class="active">Presentations</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="http://naitisbwriting.blogspot.com/" target="_blank" rel="noopener">Blog ↗</a></li>
+    </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:16px;">
+    <div class="wrap">
+      <span class="eyebrow">Posters &amp; Presentations</span>
+      <h1>Posters, Talks &amp; Publications</h1>
+      <p class="lede">Conference posters, invited talks and guest lectures, and peer-reviewed publications. See also my profile on <a href="https://scholar.google.com/citations?user=C0-z5VcAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a>.</p>
+    </div>
+  </section>
+
+  <section style="border-top:none; padding-top:0;">
+    <div class="wrap">
+
+      <div class="cv-block">
+        <h2>Invited Talks &amp; Guest Lectures</h2>
+        <div class="cv-entry">
+          <div class="role">Brain-Inspired AI</div>
+          <div class="dates">Guest Lecturer, Bluebridge Education &middot; Spring 2024</div>
+          <div class="card-links"><a href="files/BrainInspired_AI.pdf" target="_blank">Slides (PDF) ↗</a></div>
+        </div>
+        <div class="cv-entry">
+          <div class="role">Applications of AI: Cognitive Science</div>
+          <div class="dates">Guest Lecturer, Bluebridge Education &middot; Spring 2024</div>
+          <div class="card-links"><a href="files/ApplicationsAI_CognitiveScience.pdf" target="_blank">Slides (PDF) ↗</a></div>
+        </div>
+      </div>
+
+      <div class="cv-block">
+        <h2>Publications</h2>
+        <div class="cv-entry">
+          <p class="desc">Jim&eacute;nez-S&aacute;nchez, L., Thye, M., Abel, S., <strong>Bhatt, N. S.</strong>, Bonich, C., Luo, M., Mckinnon, K., Rubin, R., Skelton, J., Smikle, R., Vaher, K., &amp; Richardson, H. (2025). <a href="https://kids.frontiersin.org/articles/10.3389/frym.2025.1508144" target="_blank" rel="noopener">Behind the scenes: Using movies to study the human brain</a>. <em>Frontiers for Young Minds</em>.</p>
+        </div>
+        <div class="cv-entry">
+          <p class="desc">Nussenbaum, K., Martin, R. E., Maulhardt, S., Yang, Y., Bizzell-Hatcher, G., <strong>Bhatt, N. S.</strong>, Scheuplein, M., Rosenbaum, G. M., O'Doherty, J. P., Cockburn, J., &amp; Hartley, C. A. (2023). <a href="https://doi.org/10.7554/eLife.84260" target="_blank" rel="noopener">Novelty and uncertainty differentially drive exploration across development</a>. <em>eLife</em>.</p>
+        </div>
+        <div class="cv-entry">
+          <p class="desc">Zettersten, M., &hellip;, <strong>Bhatt, N. S.</strong>, Bergey, C. A., &amp; Frank, M. C. (2022). <a href="https://link.springer.com/article/10.3758/s13428-022-01906-4" target="_blank" rel="noopener">Peekbank: An open, large-scale repository for developmental eye-tracking data of children's word recognition</a>. <em>Behavior Research Methods</em>.</p>
+        </div>
+        <div class="cv-entry">
+          <p class="desc"><strong>Bhatt, N. S.</strong> (2021). <a href="https://scholarship.claremont.edu/scripps_theses/1664" target="_blank" rel="noopener">Uncovering Object Categories in Infant Views</a>. <em>Scripps Senior Theses</em>.</p>
+        </div>
+        <div class="cv-entry">
+          <p class="desc">Long, B., Kachergis, G., <strong>Bhatt, N. S.</strong>, &amp; Frank, M. C. (2021). <a href="https://doi.org/10.31234/osf.io/nv47t" target="_blank" rel="noopener">Characterizing the object categories two children see and interact with in a dense dataset of naturalistic visual experience</a>. <em>Proceedings of the 43rd Annual Conference of the Cognitive Science Society</em>.</p>
+        </div>
+        <div class="cv-entry">
+          <p class="desc">Zettersten, M., Bergey, C. A., <strong>Bhatt, N. S.</strong>, &hellip;, &amp; Frank, M. C. (2021). <a href="https://doi.org/10.31234/osf.io/ep693" target="_blank" rel="noopener">Peekbank: Exploring children's word recognition through an open, large-scale repository for developmental eye-tracking data</a>. <em>Proceedings of the 43rd Annual Conference of the Cognitive Science Society</em>.</p>
+        </div>
+      </div>
+
+      <div class="cv-block">
+        <h2>Conference Posters</h2>
+        <div class="cv-entry">
+          <div class="role">Uncovering Object Categories in Infant Views</div>
+          <div class="dates">Bhatt, N. S., Long, B., &amp; Frank, M. C. (2022)</div>
+          <p class="desc">Presented at the <a href="https://blogs.ed.ac.uk/languagelunch/2023/01/20/the-76th-language-lunch/" target="_blank" rel="noopener">76th Language Lunch</a>, University of Edinburgh, December 2022.</p>
+          <div class="card-links"><a href="files/Bhatt_Naiti_LanguageLunch_Poster.pdf" target="_blank">Download poster (PDF) ↗</a></div>
+        </div>
+        <div class="cv-entry">
+          <div class="role">Classification Analyses of fMRI Data Predict Perceived Color</div>
+          <div class="dates">Bhatt, N. S., Tregillus, K. E. M., &amp; Engel, S. A. (2019)</div>
+          <p class="desc">Presented at the <a href="https://vision.berkeley.edu/events/bavrd" target="_blank" rel="noopener">Bay Area Vision Research Day (BAVRD)</a>, Berkeley, California, and the <a href="https://www.sccur.org/sccur/fall_2019_conference/poster_session_2/7/" target="_blank" rel="noopener">Southern California Conference for Undergraduate Research (SCCUR)</a>, San Marcos, California.</p>
+          <div class="card-links"><a href="files/Bhatt_Naiti_LSSURP_Poster.pdf" target="_blank">Download poster (PDF) ↗</a></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>&copy; <span id="year"></span> Naiti S. Bhatt</span>
+    <div class="social-row">
+      <a href="https://github.com/naitisb" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/naiti/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=C0-z5VcAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://orcid.org/0000-0002-9592-2483" target="_blank" rel="noopener">ORCID</a>
+      <a href="mailto:naitibhatt@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
