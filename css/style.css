@@ -358,6 +358,10 @@ section + section { border-top: 1px solid var(--border); }
 }
 .photo-grid figure {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.photo-frame {
   border-radius: var(--radius);
   overflow: hidden;
   aspect-ratio: 4/5;
@@ -368,12 +372,24 @@ section + section { border-top: 1px solid var(--border); }
   justify-content: center;
   position: relative;
 }
-.photo-grid img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .photo-placeholder {
   color: var(--text-muted);
   font-size: 0.85rem;
   text-align: center;
   padding: 20px;
+}
+.photo-caption {
+  margin: 10px 2px 0;
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+.photo-date {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
 }
 
 /* ---------- Contact ---------- */

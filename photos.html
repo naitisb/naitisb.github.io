@@ -72,39 +72,64 @@
 <script src="js/main.js"></script>
 <script>
   // Add your photos here: drop image files into images/photos/ and list them below.
-  // Each entry needs a src (path to the image) and alt (short description).
+  // Each entry needs:
+  //   src     - path to the image
+  //   alt     - short accessibility description (read by screen readers, not shown visually)
+  //   caption - text shown under the photo (leave "" to show no caption)
+  //   date    - text shown under the caption, e.g. "March 2024" (leave "" to show no date)
   const photos = [
-    { src: "images/photos/coffee-roasting-sunset.jpg", alt: "Home coffee roasting on the deck at sunset" },
-    { src: "images/photos/coffee-cupping-tasting.jpg", alt: "Coffee cupping bowls set up for a tasting session" },
-    { src: "images/photos/coffee-pour-over-cafe.jpg", alt: "Pour-over coffee at a cafe table" },
-    { src: "images/photos/coffee-cherries-farm.jpg", alt: "Fresh coffee cherries held at an origin farm" },
-    { src: "images/photos/coffee-roastery-visit.jpg", alt: "Visiting a roastery with large copper roasters" },
-    { src: "images/photos/coffee-farm-processing.jpg", alt: "Coffee cherries drying at a processing facility" },
-    { src: "images/photos/coffee-brewbar-mumbai.jpg", alt: "Pour-over brew bar at a cafe in Mumbai" },
-    { src: "images/photos/coffee-home-station.jpg", alt: "Home coffee brewing station" },
-    { src: "images/photos/swim-arms-raised-sunset.jpg", alt: "Swimming with arms raised in the waves at sunset" },
-    { src: "images/photos/swim-splash-pool.jpg", alt: "Mid-splash swimming in a teal pool" },
-    { src: "images/photos/swim-turquoise-cove.jpg", alt: "Swimming in a turquoise rocky cove" },
-    { src: "images/photos/swim-sunset-ocean.jpg", alt: "Swimming in the ocean at sunset" },
-    { src: "images/photos/swim-cold-plunge.jpg", alt: "A cold-water plunge event" },
-    { src: "images/photos/swim-open-water.jpg", alt: "Open-water freestyle swimming" },
+    { src: "images/photos/coffee-roasting-sunset.jpg", alt: "Home coffee roasting on the deck at sunset", caption: "Roasting on the deck at sunset", date: "" },
+    { src: "images/photos/coffee-cupping-tasting.jpg", alt: "Coffee cupping bowls set up for a tasting session", caption: "Cupping session — comparing four roasts", date: "" },
+    { src: "images/photos/coffee-pour-over-cafe.jpg", alt: "Pour-over coffee at a cafe table", caption: "Pour-over at a cafe", date: "" },
+    { src: "images/photos/coffee-cherries-farm.jpg", alt: "Fresh coffee cherries held at an origin farm", caption: "Fresh cherries at the farm", date: "" },
+    { src: "images/photos/coffee-roastery-visit.jpg", alt: "Visiting a roastery with large copper roasters", caption: "Touring a roastery", date: "" },
+    { src: "images/photos/coffee-farm-processing.jpg", alt: "Coffee cherries drying at a processing facility", caption: "Cherries drying at the processing facility", date: "" },
+    { src: "images/photos/coffee-brewbar-mumbai.jpg", alt: "Pour-over brew bar at a cafe in Mumbai", caption: "Brew bar in Mumbai", date: "" },
+    { src: "images/photos/coffee-home-station.jpg", alt: "Home coffee brewing station", caption: "My home brewing setup", date: "" },
+    { src: "images/photos/swim-arms-raised-sunset.jpg", alt: "Swimming with arms raised in the waves at sunset", caption: "Arms up in the waves at sunset", date: "" },
+    { src: "images/photos/swim-splash-pool.jpg", alt: "Mid-splash swimming in a teal pool", caption: "Mid-splash", date: "" },
+    { src: "images/photos/swim-turquoise-cove.jpg", alt: "Swimming in a turquoise rocky cove", caption: "A turquoise cove", date: "" },
+    { src: "images/photos/swim-sunset-ocean.jpg", alt: "Swimming in the ocean at sunset", caption: "Evening swim", date: "" },
+    { src: "images/photos/swim-cold-plunge.jpg", alt: "A cold-water plunge event", caption: "Cold plunge", date: "" },
+    { src: "images/photos/swim-open-water.jpg", alt: "Open-water freestyle swimming", caption: "Open-water swim", date: "" },
   ];
 
   const grid = document.getElementById("photoGrid");
   if (photos.length === 0) {
     for (let i = 0; i < 6; i++) {
       const fig = document.createElement("figure");
-      fig.innerHTML = '<span class="photo-placeholder">Photo coming soon</span>';
+      const frame = document.createElement("div");
+      frame.className = "photo-frame";
+      frame.innerHTML = '<span class="photo-placeholder">Photo coming soon</span>';
+      fig.appendChild(frame);
       grid.appendChild(fig);
     }
   } else {
     photos.forEach(p => {
       const fig = document.createElement("figure");
+
+      const frame = document.createElement("div");
+      frame.className = "photo-frame";
       const img = document.createElement("img");
       img.src = p.src;
       img.alt = p.alt;
       img.loading = "lazy";
-      fig.appendChild(img);
+      frame.appendChild(img);
+      fig.appendChild(frame);
+
+      if (p.caption || p.date) {
+        const figcaption = document.createElement("figcaption");
+        figcaption.className = "photo-caption";
+        if (p.caption) figcaption.appendChild(document.createTextNode(p.caption));
+        if (p.date) {
+          const dateEl = document.createElement("span");
+          dateEl.className = "photo-date";
+          dateEl.textContent = p.date;
+          figcaption.appendChild(dateEl);
+        }
+        fig.appendChild(figcaption);
+      }
+
       grid.appendChild(fig);
     });
   }
