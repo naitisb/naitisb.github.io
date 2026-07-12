@@ -53,20 +53,30 @@
   <section style="border-top:none; padding-top:0;">
     <div class="wrap">
       <div class="section-head">
-        <span class="kicker">Roasting &amp; Brewing</span>
-        <h2>Coffee</h2>
+        <span class="kicker">Open Water</span>
+        <h2>Swimming</h2>
       </div>
-      <div class="photo-grid" id="photoGridCoffee"></div>
+      <div class="photo-grid" id="photoGridSwim"></div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
       <div class="section-head">
-        <span class="kicker">Open Water</span>
-        <h2>Swimming</h2>
+        <span class="kicker">On the Trail</span>
+        <h2>Hiking</h2>
       </div>
-      <div class="photo-grid" id="photoGridSwim"></div>
+      <div class="photo-grid" id="photoGridHike"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Roasting &amp; Brewing</span>
+        <h2>Coffee</h2>
+      </div>
+      <div class="photo-grid" id="photoGridCoffee"></div>
     </div>
   </section>
 </main>
@@ -87,7 +97,7 @@
 <script>
   // Add your photos here: drop image files into images/photos/ and list them below.
   // Each entry needs:
-  //   category - "coffee" or "swim" (which grid it appears in)
+  //   category - "coffee", "swim", or "hike" (which grid it appears in)
   //   src      - path to the image
   //   alt      - short accessibility description (read by screen readers, not shown visually)
   //   caption  - text shown under the photo (leave "" to show no caption)
@@ -115,6 +125,18 @@
     { category: "swim", src: "images/photos/swim-big-sky-beach.jpg", alt: "Dramatic cloudy sky over a beach", caption: "Morning swim at Topanga Beach", date: "May 2026" },
     { category: "swim", src: "images/photos/swim-sunrise-water.jpg", alt: "Colorful sunrise over the water", caption: "Sunrise swim at Long Branch Beach", date: "June 2026" },
     { category: "swim", src: "images/photos/swim-chasing-sunset.jpg", alt: "Sun flare over the water at sunset", caption: "Sunrise swim at Ocean Grove Beach", date: "June 2026" },
+    { category: "hike", src: "images/photos/hike-palisades-hudson-view.jpg", alt: "Hudson River seen from a cliffside trail in the Palisades", caption: "Hudson River views from the Palisades in Alpine, New Jersey", date: "May 2020" },
+    { category: "hike", src: "images/photos/hike-zion-canyon-overlook.jpg", alt: "Sandstone canyon walls in Zion National Park", caption: "Canyon views from Angels Landing in Zion National Park, Utah", date: "September 2021" },
+    { category: "hike", src: "images/photos/hike-holyrood-st-margarets-loch.jpg", alt: "A loch surrounded by trees in Holyrood Park", caption: "Hike past St Margaret's Loch in Holyrood Park, Edinburgh", date: "September 2022" },
+    { category: "hike", src: "images/photos/hike-pentland-highland-cow.jpg", alt: "A highland cow walking along a dirt path in the Pentland Hills", caption: "Highland cow crossing the trail on Allermuir Hill in the Pentland Hills", date: "October 2022" },
+    { category: "hike", src: "images/photos/hike-ullswater-lake-district.jpg", alt: "A lake surrounded by fells in the Lake District", caption: "Overlooking Ullswater in the Lake District, near Penrith", date: "February 2023" },
+    { category: "hike", src: "images/photos/hike-blackford-hill-trig-point.jpg", alt: "A stone trig point overlooking Edinburgh from a hilltop", caption: "Trig point views over Edinburgh from Blackford Hill", date: "June 2023" },
+    { category: "hike", src: "images/photos/hike-holyrood-st-anthonys-chapel.jpg", alt: "Ruined chapel walls on a hillside above a loch with swans", caption: "St Anthony's Chapel ruins above Holyrood Park, Edinburgh", date: "July 2023" },
+    { category: "hike", src: "images/photos/hike-torridon-highlands-sheep.jpg", alt: "Sheep grazing in a misty Highland glen", caption: "Hiking among the mountains of Torridon in the Scottish Highlands", date: "August 2023" },
+    { category: "hike", src: "images/photos/hike-pentland-reservoir-clouds.jpg", alt: "A reservoir under dramatic storm clouds in the Pentland Hills", caption: "Stormy skies over Threipmuir Reservoir in the Pentland Hills", date: "August 2023" },
+    { category: "hike", src: "images/photos/hike-perthshire-mountain.jpg", alt: "A mountain peak under a blue sky in Perthshire", caption: "Hillwalking in Perthshire, Scotland", date: "July 2024" },
+    { category: "hike", src: "images/photos/hike-boquete-volcan-baru.jpg", alt: "A volcano silhouette behind tropical flowers", caption: "Volcán Barú views from a hike near Boquete, Panama", date: "January 2026" },
+    { category: "hike", src: "images/photos/hike-humpback-rocks-overlook.jpg", alt: "A rocky overlook above a forested valley", caption: "Overlooking the Shenandoah Valley from Humpback Rocks on the Blue Ridge Parkway, Virginia", date: "June 2026" },
   ];
 
   function renderGrid(gridId, items) {
@@ -160,8 +182,9 @@
     });
   }
 
-  renderGrid("photoGridCoffee", photos.filter(p => p.category === "coffee"));
   renderGrid("photoGridSwim", photos.filter(p => p.category === "swim"));
+  renderGrid("photoGridHike", photos.filter(p => p.category === "hike"));
+  renderGrid("photoGridCoffee", photos.filter(p => p.category === "coffee"));
 </script>
 </body>
 </html>
