@@ -46,7 +46,7 @@
     <div class="wrap">
       <span class="eyebrow">Curriculum Vitae</span>
       <h1>CV</h1>
-      <p class="lede">Computational cognitive scientist and machine learning researcher with 5+ years of experience designing rigorous evaluations, behavioral studies, and reproducible analysis pipelines across child development, adolescent decision-making, and human-centered AI systems. Expertise in combining quantitative methods in developmental psychology, cognitive neuroscience, and software engineering to study complex behaviors. Recent work spans frontier language model evaluation, developmental research using multimodal human-subjects data, and open-science programs for improving research quality.</p>
+      <p class="lede">Research Engineer measuring latent abilities across AI systems by building rigorous, scalable evaluation infrastructure grounded in cognitive development. Published in <em>eLife</em> and <em>Behavior Research Methods</em>.</p>
     </div>
   </section>
 
@@ -93,18 +93,17 @@
           <div class="org"><a href="https://outlier.ai/" target="_blank" rel="noopener">Outlier</a> &amp; <a href="https://alignerr.com/" target="_blank" rel="noopener">Alignerr</a></div>
           <div class="dates">10/2025 &ndash; Present</div>
           <ul>
-            <li>Evaluating frontier language models on reasoning and coding tasks, designing and using rubrics to identify failure modes.</li>
-            <li>Comparing model judgments across ambiguous prompts to surface alignment gaps, especially regarding reproducibility.</li>
+            <li>Designing evaluation rubrics for frontier language models informed by developmental cognition research, targeting reasoning and coding tasks where model failure modes parallel challenges in human cognitive development.</li>
+            <li>Identifying systematic alignment gaps by comparing model judgments across ambiguous prompts, using experimental design methods to isolate sources of inconsistency in reproducibility and generalization.</li>
           </ul>
         </div>
         <div class="cv-entry">
-          <div class="role">Postgraduate Researcher</div>
+          <div class="role">Research Engineer</div>
           <div class="org"><a href="https://www.ed.ac.uk/" target="_blank" rel="noopener">University of Edinburgh</a></div>
           <div class="dates">09/2023 &ndash; 10/2025</div>
           <ul>
-            <li>Designed analyses for studying theory of mind development in children aged 5 to 12, integrating structural and functional MRI with behavioral outcome measurements.</li>
-            <li>Built reproducible Python-based analysis pipelines for processing and analyzing functional and diffusion MRI data, paying special attention to anonymization to protect data from child participants.</li>
-            <li>Led workshops and hackathons to align researchers, clinicians, and technical contributors across concurrent projects, teaching data processing, organization, and analysis for studying cognitive development.</li>
+            <li>Built scalable MRI analysis infrastructure for child development research, including reproducible Python pipelines and anonymization workflows for sensitive participant data.</li>
+            <li>Led workshops and hackathons to align researchers, clinicians, and technical contributors on shared data processing, organization, and analysis standards across concurrent projects.</li>
           </ul>
         </div>
         <div class="cv-entry">
@@ -117,13 +116,13 @@
           </ul>
         </div>
         <div class="cv-entry">
-          <div class="role">Junior Research Associate</div>
+          <div class="role">Research Operations Lead</div>
           <div class="org"><a href="https://www.nyu.edu/" target="_blank" rel="noopener">New York University</a></div>
           <div class="dates">05/2021 &ndash; 08/2022</div>
           <ul>
-            <li>Managed IRB/ethics compliance, budgeting, and codebase for high-impact research on adolescent decision-making, reinforcement learning, and mental health risk factors.</li>
-            <li>Assured high quality collection, processing, and analysis workflows for multimodal data, including online experiments, eye-tracking, and functional MRI.</li>
-            <li>Led school outreach and participant recruitment with NYC public and private schools, coordinating with educators and caregivers to support safe, informed participation of minors.</li>
+            <li>Owned regulatory compliance and data protection protocols, budgeting, and technical infrastructure for research on adolescent decision-making, reinforcement learning, and mental health risk factors.</li>
+            <li>Built and maintained end-to-end data pipelines for multimodal behavioral and neuroimaging data, including online experiments, eye-tracking, and MRI.</li>
+            <li>Managed participant pipelines across partner schools and organizations to support safe, informed research participation.</li>
           </ul>
         </div>
         <div class="cv-entry">
@@ -143,19 +142,19 @@
           </ul>
         </div>
         <div class="cv-entry">
+          <div class="role">Summer Research Intern</div>
+          <div class="org"><a href="https://www.stanford.edu/" target="_blank" rel="noopener">Stanford University</a></div>
+          <div class="dates">05/2020 &ndash; 08/2020</div>
+          <ul>
+            <li>Engineered human-in-the-loop annotation workflows with AWS tooling to produce evaluation-ready labeled datasets from infants' home-environment video data.</li>
+          </ul>
+        </div>
+        <div class="cv-entry">
           <div class="role">Data Curator</div>
           <div class="org"><a href="https://peekbank.stanford.edu/" target="_blank" rel="noopener">Peekbank Project</a></div>
           <div class="dates">05/2020 &ndash; 08/2021</div>
           <ul>
             <li>Streamlined integration of child development datasets from 12+ research labs into a shared open-access repository, enabling large-scale cross-study analyses of early language and attention.</li>
-          </ul>
-        </div>
-        <div class="cv-entry">
-          <div class="role">Summer Research Intern</div>
-          <div class="org"><a href="https://www.stanford.edu/" target="_blank" rel="noopener">Stanford University</a></div>
-          <div class="dates">05/2020 &ndash; 08/2020</div>
-          <ul>
-            <li>Built human-in-the-loop scalable annotation workflows with AWS tooling to label egocentric videos collected in infants&rsquo; home environments.</li>
           </ul>
         </div>
         <div class="cv-entry">
@@ -208,7 +207,18 @@ equations, and probabilistic applications using examples in the science.</li></u
       </div>
 
       <div class="cv-block">
-        <h2>Selected Technical Projects</h2>
+        <h2>Selected Projects</h2>
+        <div class="cv-entry">
+          <div class="role">Developmental Theory of Mind Benchmark for Large Language Models (DevToM)</div>
+          <div class="org">Personal Research Project</div>
+          <div class="dates">2026</div>
+          <ul>
+            <li>Designed a 201-item benchmark spanning 12 Theory of Mind dimensions grounded in developmental psychology, mapping each item to empirically established human age norms.</li>
+            <li>Evaluated 53 models across Claude, GPT, Llama, Qwen, and Mistral families (~10,000 observations) using dual analytic pipelines: mastery-based age mapping and IRT/GLMM model-based estimation with task-format covariates.</li>
+            <li>Revealed uneven cognitive profiles across frontier model families, enabling age-equivalent comparison of Theory of Mind performance rather than aggregate benchmark scoring alone.</li>
+          </ul>
+          <p class="desc"><a href="https://github.com/naitisb/devtom-openrouter" target="_blank" rel="noopener">GitHub Repository ↗</a></p>
+        </div>
         <div class="cv-entry">
           <div class="role">Healthy Habits: Family Goal-Tracking Application</div>
           <div class="org">Personal Project</div>
@@ -274,15 +284,15 @@ equations, and probabilistic applications using examples in the science.</li></u
         <div class="skills-grid">
           <div>
             <h4>Methods &amp; Evaluation</h4>
-            <p>Experimental design, AI evaluation and benchmarking, human-subjects research, preregistration, ethics protocols, open science, data governance</p>
+            <p>AI evaluation &amp; benchmarking, human-subjects experiments, IRT &amp; psychometric modeling, open science practices, data governance, longitudinal measurement</p>
           </div>
           <div>
             <h4>Programming</h4>
-            <p>Python, R, Linux, Git, TensorFlow, JavaScript (jsPsych), Detectron2, Matlab, React, Docker, HPC/SLURM</p>
+            <p>Python, R, Linux, Git, TensorFlow, Detectron2, Matlab, React, Docker, HPC/SLURM, lme4, mirt</p>
           </div>
           <div>
             <h4>Domains</h4>
-            <p>Child development, reinforcement learning, neuroimaging, naturalistic behavioral data, reproducible research</p>
+            <p>LLM benchmarking, cognitive development, reasoning &amp; ability evaluation, AI alignment, human-AI comparison</p>
           </div>
         </div>
       </div>
