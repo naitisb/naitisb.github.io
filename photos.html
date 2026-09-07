@@ -52,31 +52,35 @@
 
   <section style="border-top:none; padding-top:0;">
     <div class="wrap">
-      <div class="section-head">
-        <span class="kicker">Open Water</span>
-        <h2>Swimming</h2>
+      <div class="photo-tabs" role="tablist" aria-label="Photo themes">
+        <button class="photo-tab active" role="tab" id="tabSwim" aria-selected="true" aria-controls="panelSwim" data-panel="panelSwim">Swimming</button>
+        <button class="photo-tab" role="tab" id="tabHike" aria-selected="false" aria-controls="panelHike" data-panel="panelHike">Hiking</button>
+        <button class="photo-tab" role="tab" id="tabCoffee" aria-selected="false" aria-controls="panelCoffee" data-panel="panelCoffee">Coffee</button>
       </div>
-      <div class="photo-grid" id="photoGridSwim"></div>
-    </div>
-  </section>
 
-  <section>
-    <div class="wrap">
-      <div class="section-head">
-        <span class="kicker">On the Trail</span>
-        <h2>Hiking</h2>
+      <div class="photo-panel" id="panelSwim" role="tabpanel" aria-labelledby="tabSwim">
+        <div class="section-head">
+          <span class="kicker">Open Water</span>
+          <h2>Swimming</h2>
+        </div>
+        <div class="photo-grid" id="photoGridSwim"></div>
       </div>
-      <div class="photo-grid" id="photoGridHike"></div>
-    </div>
-  </section>
 
-  <section>
-    <div class="wrap">
-      <div class="section-head">
-        <span class="kicker">Roasting &amp; Brewing</span>
-        <h2>Coffee</h2>
+      <div class="photo-panel" id="panelHike" role="tabpanel" aria-labelledby="tabHike" hidden>
+        <div class="section-head">
+          <span class="kicker">On the Trail</span>
+          <h2>Hiking</h2>
+        </div>
+        <div class="photo-grid" id="photoGridHike"></div>
       </div>
-      <div class="photo-grid" id="photoGridCoffee"></div>
+
+      <div class="photo-panel" id="panelCoffee" role="tabpanel" aria-labelledby="tabCoffee" hidden>
+        <div class="section-head">
+          <span class="kicker">Roasting &amp; Brewing</span>
+          <h2>Coffee</h2>
+        </div>
+        <div class="photo-grid" id="photoGridCoffee"></div>
+      </div>
     </div>
   </section>
 </main>
@@ -185,6 +189,19 @@
   renderGrid("photoGridSwim", photos.filter(p => p.category === "swim"));
   renderGrid("photoGridHike", photos.filter(p => p.category === "hike"));
   renderGrid("photoGridCoffee", photos.filter(p => p.category === "coffee"));
+
+  // Toggle between the three photo themes, showing one at a time.
+  const photoTabs = Array.from(document.querySelectorAll(".photo-tab"));
+  photoTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      photoTabs.forEach(t => {
+        const isActive = t === tab;
+        t.classList.toggle("active", isActive);
+        t.setAttribute("aria-selected", isActive ? "true" : "false");
+        document.getElementById(t.dataset.panel).hidden = !isActive;
+      });
+    });
+  });
 </script>
 </body>
 </html>
