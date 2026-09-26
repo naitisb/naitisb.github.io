@@ -10,8 +10,14 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Naiti S. Bhatt</title>
-<meta name="description" content="Building reproducible AI evaluation systems using insights from developmental cognitive science and open science practices.">
+<title>Naiti S. Bhatt · Data Scientist &amp; AI Evaluation Researcher</title>
+<meta name="description" content="Data scientist and research engineer building validated data pipelines, statistical models, and AI evaluation systems, informed by developmental cognitive science and open science practices.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://naitisb.github.io/">
+<meta property="og:title" content="Naiti S. Bhatt · Data Scientist &amp; AI Evaluation Researcher">
+<meta property="og:description" content="Data scientist and research engineer building validated data pipelines, statistical models, and AI evaluation systems, informed by developmental cognitive science and open science practices.">
+<meta property="og:image" content="https://naitisb.github.io/images/profile_picture_2022.jpg">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -29,7 +35,7 @@
       <li><a href="research.html">Research</a></li>
       <li><a href="photos.html">Photos</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="http://naitisbwriting.blogspot.com/" target="_blank" rel="noopener">Blog ↗</a></li>
+      <li><a href="https://naiti.substack.com/" target="_blank" rel="noopener">Blog ↗</a></li>
     </ul>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
@@ -46,9 +52,9 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Cognitive Science &times; AI Evaluation</span>
+        <span class="eyebrow">Data Science &middot; AI Evaluation &middot; Cognitive Science</span>
         <h1>Naiti S. Bhatt</h1>
-        <p class="lede">Building reproducible AI evaluation systems using insights from developmental cognitive science and open science practices. I craft evaluation workflows, reproducible ML pipelines, and research infrastructure, and am currently focused on how insights from childhood learning and cognitive mechanisms can help us evaluate and improve AI systems.</p>
+        <p class="lede">Data scientist and research engineer building validated data pipelines, statistical models, and AI evaluation systems, informed by developmental cognitive science and open science practices. I am currently focused on how insights from childhood learning and cognitive mechanisms can help us evaluate and improve AI systems.</p>
         <div class="btn-row">
           <a class="btn btn-primary" href="cv.html">View CV</a>
           <a class="btn btn-outline" href="projects.html">See Projects</a>
@@ -64,15 +70,20 @@
       <div class="section-head">
         <span class="kicker">Focus Areas</span>
         <h2>What I work on</h2>
+        <p class="section-sub">The common thread is measurement and data quality: getting messy human and model data into a trustworthy shape, then checking that what we measure is what we meant to measure.</p>
       </div>
-      <div class="grid">
+      <div class="grid grid-2">
+        <div class="card card-accent-green">
+          <h3>Data Pipelines &amp; Engineering</h3>
+          <p class="desc">Designing scalable, reproducible ETL and analysis pipelines for multi-source human-subjects data (MRI, eye-tracking, behavioral questionnaires, egocentric video), with schema definitions and automated validation checks at ingestion so problems are caught before they reach analysis.</p>
+        </div>
         <div class="card card-accent-pink">
-          <h3>LLM Evaluation &amp; Alignment</h3>
-          <p class="desc">Evaluating large language models using tasks validated for benchmarking human learning and cognition across domains of social reasoning.</p>
+          <h3>Statistical Modeling &amp; Validation</h3>
+          <p class="desc">Fitting mixed-effects, regression, and IRT models to noisy, longitudinal human data, with an emphasis on validity: whether a measure actually captures what it claims to.</p>
         </div>
         <div class="card card-accent-green">
-          <h3>Research Software Engineering</h3>
-          <p class="desc">Designing scalable, reproducible end-to-end analysis pipelines for processing, characterizing, and modeling human-subjects data (diffusion &amp; functional MRI, behavioral questionnaires, eye-tracking, egocentric image comprehension).</p>
+          <h3>LLM Evaluation &amp; Alignment</h3>
+          <p class="desc">Evaluating large language models using tasks validated for benchmarking human learning and cognition across domains of social reasoning.</p>
         </div>
         <div class="card card-accent-pink">
           <h3>Developmental Cognitive Science</h3>
@@ -88,7 +99,8 @@
         <span class="kicker">Background</span>
         <h2>A bit more about me</h2>
       </div>
-      <p>I completed my masters at the Department of Psychology at the University of Edinburgh, where I built reproducible analysis pipelines for functional and diffusion MRI to study the neural mechanisms of theory of mind development for my dissertation work. Before Edinburgh, I graduated from Scripps College with majors in Computer Science and Neuroscience, where I trained and tested computer vision models to segment and detect objects in infant egocentric video frames to characterize early object learning for my thesis work. Most recently, I built <a href="https://github.com/naitisb/devtom-openrouter" target="_blank" rel="noopener">DevToM</a>, a developmental Theory of Mind benchmark for large language models, and I evaluate frontier models at Outlier.</p>
+      <p>I completed my masters at the Department of Psychology at the University of Edinburgh, where I built reproducible analysis pipelines for functional and diffusion MRI to study the neural mechanisms of theory of mind development for my dissertation work. Before Edinburgh, I graduated from Scripps College with majors in Computer Science and Neuroscience, where I trained and tested computer vision models to segment and detect objects in infant egocentric video frames to characterize early object learning for my thesis work. Most recently, I built <a href="projects.html">DevToM</a>, a developmental Theory of Mind benchmark for large language models, and I evaluate frontier models at Outlier &amp; Alignerr.</p>
+      <p><strong>I'm open to data science, research engineering, and AI evaluation roles in the NYC area.</strong> <a href="contact.html">Get in touch</a> or <a href="cv.html">view my CV</a>.</p>
       <p>I grew up in Basking Ridge, New Jersey. Outside of research, I roast and brew specialty coffee, chase sunrises and sunsets, and swim in international waters (19 countries &amp; 30 US states so far, from 4&deg;C to 40&deg;C).</p>
     </div>
   </section>
@@ -102,6 +114,7 @@
       <a href="https://www.linkedin.com/in/naiti/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=C0-z5VcAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Scholar</a>
       <a href="https://orcid.org/0000-0002-9592-2483" target="_blank" rel="noopener">ORCID</a>
+      <a href="https://naiti.substack.com/" target="_blank" rel="noopener">Substack</a>
       <a href="mailto:naitibhatt@gmail.com">Email</a>
     </div>
   </div>

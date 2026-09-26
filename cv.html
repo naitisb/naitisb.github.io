@@ -11,6 +11,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CV · Naiti S. Bhatt</title>
+<meta name="description" content="CV of Naiti S. Bhatt: data science, research engineering, and AI evaluation experience across Stanford, NYU, and the University of Edinburgh.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -28,7 +29,7 @@
       <li><a href="research.html">Research</a></li>
       <li><a href="photos.html">Photos</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="http://naitisbwriting.blogspot.com/" target="_blank" rel="noopener">Blog ↗</a></li>
+      <li><a href="https://naiti.substack.com/" target="_blank" rel="noopener">Blog ↗</a></li>
     </ul>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
@@ -46,12 +47,63 @@
     <div class="wrap">
       <span class="eyebrow">Curriculum Vitae</span>
       <h1>CV</h1>
-      <p class="lede">Research Engineer measuring latent abilities across AI systems by building rigorous, scalable evaluation infrastructure grounded in cognitive development.</p>
+      <p class="lede">Computational cognitive scientist and research engineer studying how people and AI systems reason about what others know and learn from limited experience. Experienced in building validated instruments and computational models for hard-to-measure constructs, with a recent focus on characterizing theory of mind development in children and LLMs.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="contact.html">Get in Touch</a>
+      </div>
+      <p class="cv-updated">Last updated September 2026</p>
     </div>
   </section>
 
   <section style="border-top:none; padding-top:0;">
     <div class="wrap">
+
+      <div class="cv-block">
+        <h2>Selected Projects</h2>
+        <div class="cv-entry">
+          <div class="role">Developmental Theory of Mind Benchmark for Large Language Models (DevToM)</div>
+          <div class="org">Independent Research Project &middot; <a href="https://devtom-eval.streamlit.app/" target="_blank" rel="noopener">Dashboard</a> &middot; <a href="https://github.com/naitisb/devtom-openrouter" target="_blank" rel="noopener">GitHub</a> &middot; <a href="https://naiti.substack.com/p/towards-a-mental-model-for-understanding" target="_blank" rel="noopener">Substack</a></div>
+          <div class="dates">Summer 2026</div>
+          <ul>
+            <li>Developed a theory of mind benchmark measuring model reasoning as a graded construct: 201 items across 12 dimensions, each mapped to empirically established human age norms (ages 2.5 to 11) to enable developmental age-equivalent scoring of large language models.</li>
+            <li>Built evaluation harness in Inspect (AISI), running 28 models across 5 providers from a 53-model routing panel (5,000+ graded observations) with custom datasets, solvers, and scorers, reusable across providers without per-model rewrites. Handled multi-provider model configuration, rate-limit and retry behavior, and stateless calls under zero-data-retention.</li>
+            <li>Red-teamed items against contamination and shortcut solutions, rewriting stems that leaked answers through lexical overlap and constructing distractors plausible under the wrong reasoning path.</li>
+            <li>Ran dual analytic pipelines over the corpus, combining mastery-based age mapping with mixed-effects and IRT model estimation including task-format covariates, so that scores are not confounded with prompt format.</li>
+            <li>Found that no model tier in any of 5 families follows the human acquisition sequence: profiles are non-monotonic across all 12 dimensions, with sizeable age-equivalent-year swings between adjacent skills, evidence that models reach competencies while bypassing their logical prerequisites.</li>
+            <li>Created an interactive Streamlit dashboard served by a Parquet snapshot, making results explorable beyond the write-up.</li>
+          </ul>
+        </div>
+        <div class="cv-entry">
+          <div class="role">Infant Looking-While-Listening Data Standardization</div>
+          <div class="org">Data Curator, <a href="https://peekbank.stanford.edu/" target="_blank" rel="noopener">Peekbank (Stanford)</a></div>
+          <div class="dates">05/2020 &ndash; 08/2021</div>
+          <ul>
+            <li>Built the import and validation layer for a multi-lab open repository standardizing eye-tracking data across 12+ labs in a shared open-access database, enabling cross-study comparisons.</li>
+            <li>Defined relational schema, wrote extract-transform-load scripts for 5 contributed datasets, and added automated schema checks flagging protocol mismatches at ingestion.</li>
+          </ul>
+        </div>
+        <div class="cv-entry">
+          <div class="role">Manifold-based Binary Classification using Jointly Embedded Geometric Data</div>
+          <div class="org">Nonlinear Data Analytics (MATH-178) &middot; <a href="https://github.com/naitisb/MobileAttentionManifold" target="_blank" rel="noopener">GitHub</a></div>
+          <div class="dates">Summer 2020</div>
+          <ul>
+            <li>Jointly embedded mobile phone and eye-tracking data in a low-dimensional manifold space to classify attentional engagement; demonstrated improved classification accuracy over baseline feature-space methods.</li>
+          </ul>
+        </div>
+        <div class="cv-entry">
+          <div class="role">Healthy Habits: Family Goal-Tracking Application</div>
+          <div class="org">Personal Project &middot; <a href="https://github.com/naitisb/family-goals-v2" target="_blank" rel="noopener">GitHub</a></div>
+          <div class="dates">Winter 2026</div>
+          <ul><li>Built and deployed a full-stack web and iOS application enabling family groups to set, track, and share daily and weekly health goals; integrated with the iOS Health API for automated step and activity syncing; includes password-protected group accounts and custom goal assignment.</li></ul>
+        </div>
+        <div class="cv-entry">
+          <div class="role">Digitizing the ToM Booklet Task</div>
+          <div class="org">Personal Project &middot; <a href="https://github.com/naitisb/tom-booklet-assessment" target="_blank" rel="noopener">GitHub</a></div>
+          <div class="dates">In Progress</div>
+          <ul><li>Building a browser-based implementation of the validated ToM Booklet task (<a href="https://doi.org/10.31234/osf.io/gczp9" target="_blank" rel="noopener">Sotomayor-Enriquez et al., 2023</a>), with audio narration, animated stimuli, and automated response capture to enable large-scale online data collection.</li></ul>
+        </div>
+        <p class="desc">See the full list of projects on the <a href="projects.html">Projects page</a>.</p>
+      </div>
 
       <div class="cv-block">
         <h2>Education</h2>
@@ -63,7 +115,7 @@
             <ul style="list-style-type: none;">
               <li>Project: <em>Structural and Functional Neural Mechanisms of Theory of Mind Development</em></li>
             </ul>
-            <li><strong>M.Sc. in Psychological Research</strong>, Awarded With Merit (11/2025)</li>
+            <li><strong>M.Sc. in Psychological Research</strong>, Awarded With Merit (11/2023)</li>
             <ul style="list-style-type: none;">
               <li>Dissertation: <em>Studying the distinct functions of theory of mind brain regions during movie-viewing</em></li>
             </ul>
@@ -74,14 +126,13 @@
           <div class="role"><a href="https://www.scrippscollege.edu/" target="_blank" rel="noopener">Scripps College</a>, Claremont, USA</div>
           <div class="dates">08/2017 &ndash; 05/2021</div>
           <ul>
-            <li><strong>B.A. in Computer Science</strong> (via HMC) and <strong>Neuroscience</strong> (via Keck Science), Awarded Cum Laude (05/2021)</li>
+            <li><strong>B.A. in Computer Science</strong> (Harvey Mudd College) and <strong>Neuroscience</strong> (Keck Science), Awarded Cum Laude (05/2021)</li>
             <ul style="list-style-type: none;">
               <li>Thesis: <em>Uncovering Object Categories in Infant Views</em></li>
             </ul>
+            <li>NSF REU Scholarships: Stanford (CSLI), 02/2020; University of Minnesota (Neuroimaging), 05/2019</li>
             <li>Scripps College Humanities Institute Fellowship (01/2021)</li>
             <li>Scripps College Success Grant Scholarship (08/2020, 08/2021)</li>
-            <li>Stanford University NSF REU Scholarship at Center for the Study of Language and Information (02/2020)</li>
-            <li>University of Minnesota NSF REU Scholarship in Neuroimaging for Cognitive Neuroscience (05/2019)</li>
           </ul>
         </div>
       </div>
@@ -94,16 +145,16 @@
           <div class="dates">10/2025 &ndash; Present</div>
           <ul>
             <li>Designing evaluation rubrics for frontier language models informed by developmental cognition research, targeting reasoning and coding tasks where model failure modes parallel challenges in human cognitive development.</li>
-            <li>Identifying systematic alignment gaps by comparing model judgments across ambiguous prompts, using experimental design methods to isolate sources of inconsistency in reproducibility and generalization.</li>
+            <li>Improved rubric reliability and evaluator agreement through structured feedback on task specifications, isolating cases where scale ambiguity rather than response quality drives annotation variance.</li>
           </ul>
         </div>
         <div class="cv-entry">
-          <div class="role">Research Engineer</div>
+          <div class="role">Postgraduate Researcher</div>
           <div class="org"><a href="https://www.ed.ac.uk/" target="_blank" rel="noopener">University of Edinburgh</a></div>
           <div class="dates">09/2023 &ndash; 10/2025</div>
           <ul>
-            <li>Built scalable MRI analysis infrastructure for child development research, including reproducible Python pipelines and anonymization workflows for sensitive participant data.</li>
-            <li>Led workshops and hackathons to align researchers, clinicians, and technical contributors on shared data processing, organization, and analysis standards across concurrent projects.</li>
+            <li>Built reproducible Python pipelines for functional and diffusion MRI data (fMRIPrep, FSL, MRtrix3) to study the structural and functional neural mechanisms of theory of mind development in 60 children aged 5 to 12.</li>
+            <li>Led workshops and hackathons to align researchers, clinicians, and technical contributors across concurrent projects, teaching data processing, organization, and analysis for studying cognitive development.</li>
           </ul>
         </div>
         <div class="cv-entry">
@@ -111,26 +162,27 @@
           <div class="org"><a href="https://www.ed.ac.uk/ppls/research/research-integrity-and-open-science" target="_blank" rel="noopener">PPLS Open Science, University of Edinburgh</a></div>
           <div class="dates">08/2023 &ndash; 10/2025</div>
           <ul>
-            <li>Designed and scaled a program for researchers across 3 departments to review code for publication-ready projects.</li>
+            <li>Designed and scaled a code review program for researchers across 3 departments, establishing shared standards for publication-ready projects across contributors with varying engineering experience.</li>
             <li>Advised researchers on open science practices at all stages of the research lifecycle, hosting workshops and 1:1 consultations on data governance, preregistration, and reproducible research design.</li>
           </ul>
         </div>
         <div class="cv-entry">
-          <div class="role">Research Operations Lead</div>
+          <div class="role">Junior Research Associate</div>
           <div class="org"><a href="https://www.nyu.edu/" target="_blank" rel="noopener">New York University</a></div>
           <div class="dates">05/2021 &ndash; 08/2022</div>
           <ul>
-            <li>Owned regulatory compliance and data protection protocols, budgeting, and technical infrastructure for research on adolescent decision-making, reinforcement learning, and mental health risk factors.</li>
-            <li>Built and maintained end-to-end data pipelines for multimodal behavioral and neuroimaging data, including online experiments, eye-tracking, and MRI.</li>
-            <li>Managed participant pipelines across partner schools and organizations to support safe, informed research participation.</li>
+            <li>Owned collection, processing, and analysis workflows for multimodal data, including online experiments, eye-tracking, and functional MRI.</li>
+            <li>Collected data for and contributed to the write-up of a study showing how novelty and uncertainty differentially drive information-seeking exploration across development.</li>
+            <li>Managed IRB/ethics compliance, budgeting, and codebase for research on adolescent decision-making, reinforcement learning, and mental health risk factors.</li>
+            <li>Led school outreach and participant recruitment with NYC public and private schools, coordinating with educators and caregivers to support safe, informed participation of minors.</li>
           </ul>
         </div>
         <div class="cv-entry">
-          <div class="role">Software Engineer</div>
+          <div class="role">Software Engineer (Part-Time)</div>
           <div class="org"><a href="https://www.stanford.edu/" target="_blank" rel="noopener">Stanford University</a></div>
           <div class="dates">05/2021 &ndash; 11/2021</div>
           <ul>
-            <li>Engineered a participant database system with custom Python tooling for all lab participants, improving scalability and coordinating overhead in human-subjects research operations.</li>
+            <li>Re-engineered the participant database system in Python for a lab managing 500+ active participants, replacing manual tracking with queryable infrastructure and reducing coordination overhead.</li>
           </ul>
         </div>
         <div class="cv-entry">
@@ -138,7 +190,7 @@
           <div class="org"><a href="https://www.scrippscollege.edu/" target="_blank" rel="noopener">Scripps College</a> &amp; <a href="https://www.stanford.edu/" target="_blank" rel="noopener">Stanford University</a></div>
           <div class="dates">08/2020 &ndash; 05/2021</div>
           <ul>
-            <li>Built computer vision pipelines for infant egocentric video using Detectron2 models to characterize early visual experience and relate naturalistic input to object and word learning.</li>
+            <li>Fine-tuned and tested Detectron2 object detection and segmentation models in PyTorch on 10,000 annotated frames of infant egocentric video to characterize early visual experience and evaluate model performance on unusual image angles.</li>
           </ul>
         </div>
         <div class="cv-entry">
@@ -146,15 +198,7 @@
           <div class="org"><a href="https://www.stanford.edu/" target="_blank" rel="noopener">Stanford University</a></div>
           <div class="dates">05/2020 &ndash; 08/2020</div>
           <ul>
-            <li>Engineered human-in-the-loop annotation workflows with AWS tooling to produce evaluation-ready labeled datasets from infants' home-environment video data.</li>
-          </ul>
-        </div>
-        <div class="cv-entry">
-          <div class="role">Data Curator</div>
-          <div class="org"><a href="https://peekbank.stanford.edu/" target="_blank" rel="noopener">Peekbank Project</a></div>
-          <div class="dates">05/2020 &ndash; 08/2021</div>
-          <ul>
-            <li>Streamlined integration of child development datasets from 12+ research labs into a shared open-access repository, enabling large-scale cross-study analyses of early language and attention.</li>
+            <li>Built human-in-the-loop annotation workflows with AWS SageMaker to label egocentric videos from infants' home environments, producing a training set for object recognition models.</li>
           </ul>
         </div>
         <div class="cv-entry">
@@ -162,9 +206,23 @@
           <div class="org"><a href="https://twin-cities.umn.edu/" target="_blank" rel="noopener">University of Minnesota</a></div>
           <div class="dates">05/2019 &ndash; 08/2019</div>
           <ul>
-            <li>Implemented supervised machine learning models to successfully predict perceived color using functional MRI data.</li>
+            <li>Trained supervised classifiers to predict perceived color using functional MRI data.</li>
           </ul>
         </div>
+      </div>
+
+      <div class="cv-block">
+        <h2>Selected Publications</h2>
+        <div class="cv-entry">
+          <p class="desc">Nussenbaum, K., Martin, R. E., Maulhardt, S., Yang, Y., Bizzell-Hatcher, G., <strong>Bhatt, N. S.</strong>, Scheuplein, M., Rosenbaum, G. M., O'Doherty, J. P., Cockburn, J., &amp; Hartley, C. A. (2023). <a href="https://doi.org/10.7554/eLife.84260" target="_blank" rel="noopener">Novelty and uncertainty differentially drive exploration across development</a>. <em>eLife</em>.</p>
+        </div>
+        <div class="cv-entry">
+          <p class="desc">Zettersten, M., &hellip;, <strong>Bhatt, N. S.</strong>, Bergey, C. A., &amp; Frank, M. C. (2022). <a href="https://link.springer.com/article/10.3758/s13428-022-01906-4" target="_blank" rel="noopener">Peekbank: An open, large-scale repository for developmental eye-tracking data of children's word recognition</a>. <em>Behavior Research Methods</em>.</p>
+        </div>
+        <div class="cv-entry">
+          <p class="desc">Long, B., Kachergis, G., <strong>Bhatt, N. S.</strong>, &amp; Frank, M. C. (2021). <a href="https://doi.org/10.31234/osf.io/nv47t" target="_blank" rel="noopener">Characterizing the object categories two children see and interact with in a dense dataset of naturalistic visual experience</a>. <em>Proceedings of the 43rd Annual Conference of the Cognitive Science Society</em>.</p>
+        </div>
+        <p class="desc">See the full list of posters, talks, and publications on the <a href="research.html">Research page</a>.</p>
       </div>
 
       <div class="cv-block">
@@ -184,71 +242,23 @@
           <div class="org"><a href="https://www.ed.ac.uk/" target="_blank" rel="noopener">University of Edinburgh</a></div>
           <div class="dates">Autumn 2023 &ndash; Spring 2025</div>
           <ul>
-            <li><em>Data Analysis for Psychology in R 1</em> (PSYL08013): Mentored students through group-based pair programming assignments, teaching fundamentals of univariate statistics
-and R programming.</li>
-            <li><em>Data Analysis for Psychology in R 3</em> (PSYL10168): Mentored students through fundamental questions relating to multivariate statistics and R programming. </li>
+            <li><em>Data Analysis for Psychology in R 1</em> (PSYL08013) with Dr. Umberto Noe, Autumn 2023 &ndash; Spring 2025: mentored students through group-based pair programming assignments, teaching fundamentals of univariate statistics and R programming.</li>
+            <li><em>Psychology 1A/B</em> with Dr. Hannah Cornish, Autumn 2023 &ndash; Spring 2024.</li>
+            <li><em>Data Analysis for Psychology in R 3</em> (PSYL10168) with Dr. Umberto Noe, Autumn 2023: mentored students through fundamental questions relating to multivariate statistics and R programming.</li>
           </ul>
         </div>
         <div class="cv-entry">
           <div class="role">Teaching Assistant</div>
           <div class="org"><a href="https://www.hmc.edu/" target="_blank" rel="noopener">Harvey Mudd College</a></div>
           <div class="dates">Spring 2020</div>
-          <ul><li><em>Computability and Logic</em> (CSCI-081): Led weekly sessions and tutored 20 students to clarify topics relating to computability theory, set countability, formal
-logics (predicate, propositional, etc.), Chomsky grammars and languages, Turing machines, and automata; continued
-teaching virtually during pandemic.</li></ul>
+          <ul><li><em>Computability and Logic</em> (CSCI-081) with Dr. George Monta&ntilde;ez: led weekly sessions and tutored 20 students to clarify topics relating to computability theory, set countability, formal logics (predicate, propositional, etc.), Chomsky grammars and languages, Turing machines, and automata; continued teaching virtually during pandemic.</li></ul>
         </div>
         <div class="cv-entry">
           <div class="role">Teaching Assistant</div>
           <div class="org"><a href="https://www.pomona.edu/" target="_blank" rel="noopener">Pomona College</a></div>
           <div class="dates">Autumn 2019</div>
-          <ul><li><em>Calculus II w/ Applications to Science</em> (MATH-031S): Led twice-weekly sessions and tutored 30 students to help understand series and sequences, integration, differential
-equations, and probabilistic applications using examples in the science.</li></ul>
+          <ul><li><em>Calculus II w/ Applications to Science</em> (MATH-031S) with Dr. Blerta Shtylla: led twice-weekly sessions and tutored 30 students to help understand series and sequences, integration, differential equations, and probabilistic applications using examples in the sciences.</li></ul>
         </div>
-      </div>
-
-      <div class="cv-block">
-        <h2>Selected Projects</h2>
-        <div class="cv-entry">
-          <div class="role">Developmental Theory of Mind Benchmark for Large Language Models (DevToM)</div>
-          <div class="org">Personal Research Project</div>
-          <div class="dates">2026</div>
-          <ul>
-            <li>Designed a 201-item benchmark spanning 12 Theory of Mind dimensions grounded in developmental psychology, mapping each item to empirically established human age norms.</li>
-            <li>Evaluated 53 models across Claude, GPT, Llama, Qwen, and Mistral families (~10,000 observations) using dual analytic pipelines: mastery-based age mapping and IRT/GLMM model-based estimation with task-format covariates.</li>
-            <li>Revealed uneven cognitive profiles across frontier model families, enabling age-equivalent comparison of Theory of Mind performance rather than aggregate benchmark scoring alone.</li>
-          </ul>
-          <p class="desc"><a href="https://github.com/naitisb/devtom-openrouter" target="_blank" rel="noopener">GitHub Repository ↗</a></p>
-        </div>
-        <div class="cv-entry">
-          <div class="role">Healthy Habits: Family Goal-Tracking Application</div>
-          <div class="org">Personal Project</div>
-          <div class="dates">Winter 2026</div>
-          <ul><li>Built and deployed a React-based full-stack web and iOS application enabling family groups to set, track, and share daily and weekly health goals; integrated with the iOS Health API for automated step and activity syncing; includes password-protected group accounts and custom goal assignment.</li></ul>
-        </div>
-        <div class="cv-entry">
-          <div class="role">Digitizing the ToM Booklet Task</div>
-          <div class="org">Personal Project</div>
-          <div class="dates">In Progress</div>
-          <ul><li>Building a browser-based implementation of the validated ToM Booklet task (<a href="https://doi.org/10.31234/osf.io/gczp9" target="_blank" rel="noopener">Sotomayor-Enriquez et al., 2023</a>), with audio narration, animated stimuli, and automated response capture to enable large-scale online data collection.</li></ul>
-        </div>
-        <div class="cv-entry">
-          <div class="role">Manifold-based Binary Classification using Jointly Embedded Geometric Data</div>
-          <div class="org">Nonlinear Data Analytics (MATH-178)</div>
-          <div class="dates">Summer 2020</div>
-          <ul><li>Jointly embedded mobile phone and eye-tracking data in a low-dimensional manifold space to classify attentional engagement; demonstrated improved classification accuracy over baseline feature-space methods.</li></ul>
-        </div>
-        <div class="cv-entry">
-          <div class="role">Endangered? A Tool for Labeling and Classifying Animals in the Wild</div>
-          <div class="org">Software Development (CSCI-121)</div>
-          <div class="dates">Autumn 2019</div>
-          <ul><li>Built a React Native application that classifies user-uploaded wildlife images, returning predicted genus, species, and IUCN conservation status via a trained computer vision model.</li></ul>
-        </div>
-        <p class="desc">See the full list of projects on the <a href="projects.html">Projects page</a>.</p>
-      </div>
-
-      <div class="cv-block">
-        <h2>Publications</h2>
-        <p class="desc">See the full list of posters, talks, and publications on the <a href="research.html">Research page</a>.</p>
       </div>
 
       <div class="cv-block">
@@ -274,25 +284,44 @@ equations, and probabilistic applications using examples in the science.</li></u
         <div class="cv-entry">
           <div class="role">Conference Volunteer</div>
           <div class="org">Women in Machine Learning (NeurIPS)</div>
-          <div class="dates">12/2019, 12/2021</div>
+          <div class="dates">12/2019 &ndash; 12/2021</div>
           <ul><li>Supported community-building and logistics for workshop attendees within the broader NeurIPS research community.</li></ul>
         </div>
       </div>
 
       <div class="cv-block">
-        <h2>Additional Skills</h2>
+        <h2>Certifications</h2>
+        <div class="cv-entry">
+          <div class="role">CITI Program (Collaborative Institutional Training Initiative)</div>
+          <ul>
+            <li><strong>Human Research: Social &amp; Behavioral Research Investigators</strong> (Refresher Course), Massachusetts Institute of Technology, 10/2022; expired 10/2025 &middot; <a href="files/Bhatt_Naiti_CITI_2022_MIT_SocialBehavioral_Refresher.pdf" target="_blank">Certificate (PDF) ↗</a> &middot; <a href="https://www.citiprogram.org/verify/?wd25829af-96ce-41b3-ac77-f01b1fe2718b-52158109" target="_blank" rel="noopener">Verify ↗</a></li>
+            <li><strong>Revised Common Rule: Investigators</strong> (Basic Course), New York University, 05/2021; no expiration &middot; <a href="files/Bhatt_Naiti_CITI_2021_NYU_RevisedCommonRule.pdf" target="_blank">Certificate (PDF) ↗</a> &middot; <a href="https://www.citiprogram.org/verify/?w0fcffdfb-4c0e-4edd-87aa-2c945b99e827-42264228" target="_blank" rel="noopener">Verify ↗</a></li>
+            <li><strong>Human Research: Social/Behavioral or Humanist Research Investigators and Key Personnel</strong> (Basic Course), University of Minnesota, 06/2019; expired 06/2022 &middot; <a href="files/Bhatt_Naiti_CITI_2019_UMN_SocialBehavioral.pdf" target="_blank">Certificate (PDF) ↗</a> &middot; <a href="https://www.citiprogram.org/verify/?w12a4717c-ae4d-4804-b3e6-3e121ac8db39-31979727" target="_blank" rel="noopener">Verify ↗</a></li>
+            <li><strong>Good Clinical Practice and Human Research Protections for Biomedical Study Teams</strong> (Basic Course), University of Minnesota, 06/2019; expired 06/2022 &middot; <a href="files/Bhatt_Naiti_CITI_2019_UMN_GCP_HRP.pdf" target="_blank">Certificate (PDF) ↗</a> &middot; <a href="https://www.citiprogram.org/verify/?wb4998b00-bbd9-4721-be24-6657efb17bec-31979728" target="_blank" rel="noopener">Verify ↗</a></li>
+            <li><strong>Responsible Conduct of Research: Research Involving Human Subjects</strong> (Basic Course), University of Minnesota, 06/2019; no expiration &middot; <a href="files/Bhatt_Naiti_CITI_2019_UMN_RCR_HumanSubjects.pdf" target="_blank">Certificate (PDF) ↗</a> &middot; <a href="https://www.citiprogram.org/verify/?w5c9f9b38-9f85-40eb-b8c4-98a669f1961f-31979729" target="_blank" rel="noopener">Verify ↗</a></li>
+            <li><strong>Responsible Conduct of Research: Agency Specific</strong> (Basic Course), University of Minnesota, 06/2019; no expiration &middot; <a href="files/Bhatt_Naiti_CITI_2019_UMN_RCR_AgencySpecific.pdf" target="_blank">Certificate (PDF) ↗</a> &middot; <a href="https://www.citiprogram.org/verify/?w57345e00-f0a5-4e09-8a7f-4c2612ebd1c0-31979730" target="_blank" rel="noopener">Verify ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cv-block">
+        <h2>Skills</h2>
         <div class="skills-grid">
           <div>
-            <h4>Methods &amp; Evaluation</h4>
-            <p>AI evaluation &amp; benchmarking, human-subjects experiments, IRT &amp; psychometric modeling, open science practices, data governance, longitudinal measurement</p>
+            <h4>Data &amp; Programming</h4>
+            <p>Python (Pandas, Polars, scikit-learn, PyTorch), SQL, R (tidyverse, lme4, mirt), ETL pipeline design, schema definition &amp; validation, Parquet, Streamlit/Plotly dashboards, Git, Docker, Linux, HPC/SLURM, AWS (SageMaker), JavaScript (jsPsych, React), Matlab</p>
           </div>
           <div>
-            <h4>Programming</h4>
-            <p>Python, R, Linux, Git, TensorFlow, Detectron2, Matlab, React, Docker, HPC/SLURM, lme4, mirt</p>
+            <h4>Statistical Methods</h4>
+            <p>Mixed-effects &amp; regression modeling, IRT &amp; psychometrics, Bayesian hierarchical modeling, hypothesis testing, experimental design, causal inference, inter-rater reliability, construct validity</p>
+          </div>
+          <div>
+            <h4>AI Evaluation</h4>
+            <p>Benchmark construction, LLM-as-a-judge evaluation, red-teaming, Inspect (AISI), multi-provider API orchestration, model training &amp; fine-tuning (Detectron2)</p>
           </div>
           <div>
             <h4>Domains</h4>
-            <p>LLM benchmarking, cognitive development, reasoning &amp; ability evaluation, AI alignment, human-AI comparison</p>
+            <p>Human-AI interaction, theory of mind reasoning, early life learning, cognitive development, computer vision, reinforcement learning, neuroimaging</p>
           </div>
         </div>
       </div>
@@ -309,6 +338,7 @@ equations, and probabilistic applications using examples in the science.</li></u
       <a href="https://www.linkedin.com/in/naiti/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=C0-z5VcAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Scholar</a>
       <a href="https://orcid.org/0000-0002-9592-2483" target="_blank" rel="noopener">ORCID</a>
+      <a href="https://naiti.substack.com/" target="_blank" rel="noopener">Substack</a>
       <a href="mailto:naitibhatt@gmail.com">Email</a>
     </div>
   </div>

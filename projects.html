@@ -11,6 +11,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects · Naiti S. Bhatt</title>
+<meta name="description" content="Data pipelines, statistical models, and AI evaluation systems by Naiti S. Bhatt, each framed as problem, data, method, and result.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -28,7 +29,7 @@
       <li><a href="research.html">Research</a></li>
       <li><a href="photos.html">Photos</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="http://naitisbwriting.blogspot.com/" target="_blank" rel="noopener">Blog ↗</a></li>
+      <li><a href="https://naiti.substack.com/" target="_blank" rel="noopener">Blog ↗</a></li>
     </ul>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
@@ -44,51 +45,110 @@
 <main>
   <section class="hero" style="padding-bottom:16px;">
     <div class="wrap">
-      <span class="eyebrow">GitHub Projects</span>
+      <span class="eyebrow">Selected Projects</span>
       <h1>Projects</h1>
-      <p class="lede">A selection of research software and applied engineering projects, spanning neuroimaging pipelines, experiment tooling, and personal apps. See more on <a href="https://github.com/naitisb" target="_blank" rel="noopener">GitHub</a>.</p>
+      <p class="lede">Data pipelines, statistical models, and evaluation systems, each laid out as problem &rarr; data &rarr; method &rarr; result. See more on <a href="https://github.com/naitisb" target="_blank" rel="noopener">GitHub</a>.</p>
     </div>
   </section>
 
   <section style="border-top:none; padding-top:0;">
     <div class="wrap">
-      <div class="grid">
+      <div class="grid grid-2">
 
-        <div class="card card-accent-pink">
-          <h3>Developmental Theory of Mind Age-based LLM Evaluation</h3>
-          <p class="meta">Python &middot; 2026</p>
-          <p class="desc">A 201-item benchmark spanning 12 Theory of Mind dimensions grounded in developmental psychology. Evaluated 53 models across Claude, GPT, Llama, Qwen, and Mistral families (~10,000 observations) using dual analytic pipelines: mastery-based age mapping and IRT/GLMM model-based estimation with task-format covariates.</p>
+        <!-- Top slot reserved for the claims-data project (notebook + write-up) once it's built. -->
+
+        <div class="card card-accent-pink card-featured">
+          <h3>DevToM: Developmental Theory of Mind Benchmark for LLMs</h3>
+          <p class="meta">Python (Inspect) &middot; R &middot; Summer 2026</p>
+          <dl class="pdmr">
+            <div><dt>Problem</dt><dd>LLM benchmarks usually report one aggregate score, which can't show which reasoning skills a model has or whether they emerge in a human-like order.</dd></div>
+            <div><dt>Data</dt><dd>201 items across 12 Theory of Mind dimensions, each anchored to empirically established child age norms (ages 2.5 to 11); <strong>5,000+ graded responses</strong> from <strong>28 models across 5 providers</strong>, drawn from a 53-model routing panel.</dd></div>
+            <div><dt>Method</dt><dd>Evaluation harness in Inspect (AISI) with custom datasets, solvers, and scorers; items red-teamed against contamination and answer leakage; dual analytic pipelines combining mastery-based age mapping with mixed-effects and IRT models that include task-format covariates.</dd></div>
+            <div class="result"><dt>Result</dt><dd>No model tier in any of the 5 families follows the human acquisition sequence: profiles are non-monotonic across all 12 dimensions, with sizeable age-equivalent swings between adjacent skills. Results are explorable in a Streamlit dashboard served from a Parquet snapshot.</dd></div>
+          </dl>
           <div>
             <span class="tag alt">LLM Benchmarking</span>
-            <span class="tag alt">IRT &amp; Psychometric Modeling</span>
-            <span class="tag alt">AI Evaluations</span>
+            <span class="tag alt">IRT &amp; Mixed-Effects Models</span>
+            <span class="tag alt">Streamlit Dashboard</span>
+            <span class="tag alt">AI Evaluation</span>
           </div>
           <div class="card-links">
+            <a href="https://devtom-eval.streamlit.app/" target="_blank" rel="noopener">Live dashboard ↗</a>
+            <a href="https://naiti.substack.com/p/towards-a-mental-model-for-understanding" target="_blank" rel="noopener">Write-up ↗</a>
             <a href="https://github.com/naitisb/devtom-openrouter" target="_blank" rel="noopener">Repository ↗</a>
           </div>
         </div>
 
         <div class="card card-accent-green">
-          <h3>Family Goals</h3>
-          <p class="meta">TypeScript &middot; 2026</p>
-          <p class="desc">Web and iOS app for tracking daily and weekly goals as a family, built with a modern TypeScript stack for improved reliability and cross-platform support.</p>
+          <h3>Peekbank: Multi-Lab Eye-Tracking Data Standardization</h3>
+          <p class="meta">Data Curator, Peekbank (Stanford) &middot; 2020&ndash;2021</p>
+          <dl class="pdmr">
+            <div><dt>Problem</dt><dd>Infant looking-while-listening studies come from many labs, each with its own formats and protocols, which made cross-study comparison impractical.</dd></div>
+            <div><dt>Data</dt><dd>Eye-tracking datasets contributed by 12+ labs, including 5 datasets I imported.</dd></div>
+            <div><dt>Method</dt><dd>Built the import and validation layer: defined the relational schema, wrote ETL scripts for 5 contributed datasets, and added automated schema checks that flag protocol mismatches at ingestion.</dd></div>
+            <div class="result"><dt>Result</dt><dd>A shared open-access database enabling cross-study analyses of early word recognition, published in <em>Behavior Research Methods</em> (2022).</dd></div>
+          </dl>
           <div>
-            <span class="tag">Web Development</span>
-            <span class="tag">Full-Stack</span>
-            <span class="tag">Mobile</span>
+            <span class="tag">ETL</span>
+            <span class="tag">Data Validation</span>
+            <span class="tag">Relational Schema</span>
+            <span class="tag">Open Data</span>
           </div>
           <div class="card-links">
-            <a href="https://github.com/naitisb/family-goals-v2" target="_blank" rel="noopener">Repository ↗</a>
+            <a href="https://peekbank.stanford.edu/" target="_blank" rel="noopener">Peekbank site ↗</a>
+            <a href="https://link.springer.com/article/10.3758/s13428-022-01906-4" target="_blank" rel="noopener">Paper ↗</a>
           </div>
         </div>
 
         <div class="card card-accent-pink">
-          <h3>Pregnancy During COVID-19 Pandemic: Brainhack Project</h3>
-          <p class="meta">Jupyter / Neuroimaging &middot; 2026</p>
-          <p class="desc">Functional and structural connectivity analysis pipeline examining child neurobehavioural development after pregnancy during the COVID-19 pandemic, built collaboratively during a Brainhack event.</p>
+          <h3>Infant Egocentric Object Recognition</h3>
+          <p class="meta">Python (PyTorch, Detectron2) &middot; 2020&ndash;2021</p>
+          <dl class="pdmr">
+            <div><dt>Problem</dt><dd>Which objects do infants actually see day to day, and can standard object detectors handle the unusual angles of head-mounted camera footage?</dd></div>
+            <div><dt>Data</dt><dd>10,000 annotated frames of infant egocentric video recorded in home environments.</dd></div>
+            <div><dt>Method</dt><dd>Fine-tuned and tested Detectron2 object detection and segmentation models, evaluating performance on infant-view image angles.</dd></div>
+            <div class="result"><dt>Result</dt><dd>Characterized the object categories in infants' early visual experience; contributed to a CogSci 2021 paper and my undergraduate thesis.</dd></div>
+          </dl>
           <div>
-            <span class="tag">MRI Analysis</span>
-            <span class="tag">Reproducible Science</span>
+            <span class="tag alt">Computer Vision</span>
+            <span class="tag alt">Model Fine-Tuning</span>
+            <span class="tag alt">Model Evaluation</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/brialorelle/headcam-objects" target="_blank" rel="noopener">Repository ↗</a>
+            <a href="https://doi.org/10.31234/osf.io/nv47t" target="_blank" rel="noopener">Paper ↗</a>
+            <a href="https://scholarship.claremont.edu/scripps_theses/1664" target="_blank" rel="noopener">Thesis ↗</a>
+          </div>
+        </div>
+
+        <div class="card card-accent-green">
+          <h3>Gaze Entropy &amp; Decision-Making (LDM Analysis)</h3>
+          <p class="meta">Jupyter Notebook &middot; 2022</p>
+          <dl class="pdmr">
+            <div><dt>Problem</dt><dd>Does how people spread their gaze during a reinforcement-learning task relate to the choices they make?</dd></div>
+            <div><dt>Data</dt><dd>Eye-tracking data recorded during a reinforcement-learning decision task.</dd></div>
+            <div><dt>Method</dt><dd>Pipeline for processing raw eye-tracking data, computing gaze entropy, and correlating it with decision-making outcomes.</dd></div>
+            <!-- TODO: add a one-line Result row (or a repo link if the code can be made public). -->
+          </dl>
+          <div>
+            <span class="tag">Eye-Tracking</span>
+            <span class="tag">Data Pipelines</span>
+            <span class="tag">Reinforcement Learning</span>
+          </div>
+        </div>
+
+        <div class="card card-accent-pink">
+          <h3>Pregnancy During COVID-19: Brainhack Project</h3>
+          <p class="meta">Jupyter / Neuroimaging &middot; 2026</p>
+          <dl class="pdmr">
+            <div><dt>Problem</dt><dd>How does pregnancy during the COVID-19 pandemic relate to children's later neurobehavioural development?</dd></div>
+            <div><dt>Data</dt><dd>Functional and structural MRI connectivity data.</dd></div>
+            <div><dt>Method</dt><dd>Functional and structural connectivity analysis pipeline, built collaboratively during a Brainhack event.</dd></div>
+            <!-- TODO: add a one-line Result row once findings are written up. -->
+          </dl>
+          <div>
+            <span class="tag alt">MRI Analysis</span>
+            <span class="tag alt">Reproducible Pipelines</span>
           </div>
           <div class="card-links">
             <a href="https://github.com/naitisb/PDCP-brainhack-funcstruct-2026" target="_blank" rel="noopener">Repository ↗</a>
@@ -96,27 +156,21 @@
         </div>
 
         <div class="card card-accent-green">
-          <h3>Infant Egocentric Object Recognition</h3>
-          <p class="meta">HTML &middot; 2021</p>
-          <p class="desc">Methods for extracting object category information from videos collected using head-mounted cameras on infants, developed for my undergraduate thesis using computer vision models (Detectron2) for characterizing early visual experience.</p>
+          <h3>Family Goals</h3>
+          <p class="meta">TypeScript (Next.js) &middot; SwiftUI &middot; 2026</p>
+          <dl class="pdmr">
+            <div><dt>Problem</dt><dd>Families had no shared place to set and track daily and weekly health goals together.</dd></div>
+            <div><dt>Data</dt><dd>Water, exercise, and step logs per family member, with steps synced automatically from iOS HealthKit.</dd></div>
+            <div><dt>Method</dt><dd>Full-stack web and iOS app on a SQLite-compatible database (Turso), with password-protected family accounts and assignable goals.</dd></div>
+            <div class="result"><dt>Result</dt><dd>Deployed web and iOS apps with weekly, monthly, and yearly progress views, from completion rates to calendar heatmaps.</dd></div>
+          </dl>
           <div>
-            <span class="tag alt">Object Recognition &amp; Segmentation</span>
-            <span class="tag alt">Statistical Analysis</span>
-            <span class="tag alt">Cognitive Development</span>
+            <span class="tag">Full-Stack</span>
+            <span class="tag">SQL (SQLite)</span>
+            <span class="tag">Mobile</span>
           </div>
           <div class="card-links">
-            <a href="https://github.com/brialorelle/headcam-objects" target="_blank" rel="noopener">Repository ↗</a>
-          </div>
-        </div>
-
-        <div class="card card-accent-pink">
-          <h3>LDM Analysis</h3>
-          <p class="meta">Jupyter Notebook &middot; 2022</p>
-          <p class="desc">Pipeline built for processing and analyzing eye-tracking data for a reinforcement-learning project correlating gaze entropy with decision-making outcomes.</p>
-          <div>
-            <span class="tag alt">Eye-Tracking</span>
-            <span class="tag alt">Data Engineering</span>
-            <span class="tag alt">Reinforcement Learning</span>
+            <a href="https://github.com/naitisb/family-goals-v2" target="_blank" rel="noopener">Repository ↗</a>
           </div>
         </div>
 
@@ -133,6 +187,7 @@
       <a href="https://www.linkedin.com/in/naiti/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=C0-z5VcAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Scholar</a>
       <a href="https://orcid.org/0000-0002-9592-2483" target="_blank" rel="noopener">ORCID</a>
+      <a href="https://naiti.substack.com/" target="_blank" rel="noopener">Substack</a>
       <a href="mailto:naitibhatt@gmail.com">Email</a>
     </div>
   </div>

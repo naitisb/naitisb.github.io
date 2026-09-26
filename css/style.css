@@ -299,6 +299,7 @@ section { padding: 56px 0; }
 section + section { border-top: 1px solid var(--border); }
 
 .section-head { margin-bottom: 32px; }
+.section-head .section-sub { color: var(--text-muted); max-width: 64ch; margin: 0; }
 .section-head .kicker {
   font-size: 0.82rem;
   font-weight: 700;
@@ -329,6 +330,24 @@ section + section { border-top: 1px solid var(--border); }
 .card p.desc { color: var(--text-muted); flex: 1; }
 .card-links { margin-top: 14px; display: flex; gap: 14px; font-size: 0.9rem; font-weight: 600; }
 
+.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 640px) { .grid-2 { grid-template-columns: 1fr; } }
+
+/* problem -> data -> method -> result breakdown on project cards */
+.card .pdmr { margin: 0 0 14px; flex: 1; font-size: 0.93rem; }
+.card .pdmr div { display: grid; grid-template-columns: 4.6rem 1fr; gap: 10px; padding: 7px 0; border-top: 1px solid var(--border); }
+.card .pdmr div:first-child { border-top: none; padding-top: 0; }
+.card .pdmr dt { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); padding-top: 3px; }
+.card .pdmr dd { margin: 0; color: var(--text-muted); }
+.card .pdmr .result dd { color: var(--text); }
+.card .pdmr dd strong { color: var(--text); font-weight: 600; }
+@media (max-width: 480px) {
+  .card .pdmr div { grid-template-columns: 1fr; gap: 2px; }
+  .card .pdmr dt { padding-top: 0; }
+}
+.card.card-featured { grid-column: 1 / -1; }
+.card-links { flex-wrap: wrap; }
+
 .card-accent-pink { border-top: 4px solid var(--pink-deep); }
 .card-accent-green { border-top: 4px solid var(--green-deep); }
 
@@ -347,6 +366,7 @@ section + section { border-top: 1px solid var(--border); }
 .cv-entry ul li { margin-bottom: 4px; }
 
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 18px; }
+.cv-updated { color: var(--text-muted); font-size: 0.85rem; margin: 14px 0 0; }
 .skills-grid h4 { margin: 0 0 8px; font-size: 0.95rem; }
 .skills-grid p { color: var(--text-muted); font-size: 0.92rem; margin: 0; }
 
