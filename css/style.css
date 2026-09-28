@@ -332,6 +332,37 @@ section + section { border-top: 1px solid var(--border); }
 
 .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 640px) { .grid-2 { grid-template-columns: 1fr; } }
+.grid-1 { grid-template-columns: 1fr; }
+
+/* "Jump to a project" list at the top of projects.html */
+.project-toc {
+  margin-top: 28px;
+  padding: 16px 22px 6px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.project-toc .toc-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.project-toc ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
+.project-toc li { border-top: 1px solid var(--border); }
+.project-toc li:nth-child(-n+2) { border-top: none; }
+.project-toc a.toc-link { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 0; color: var(--text); font-weight: 600; font-size: 0.93rem; line-height: 1.4; }
+.project-toc a.toc-link:hover { color: var(--pink-ink); text-decoration: none; }
+[data-theme="dark"] .project-toc a.toc-link:hover { color: var(--pink-deep); }
+.project-toc .toc-meta { color: var(--text-muted); font-weight: 500; font-size: 0.8rem; white-space: nowrap; }
+@media (max-width: 640px) {
+  .project-toc ol { grid-template-columns: 1fr; }
+  .project-toc li:nth-child(2) { border-top: 1px solid var(--border); }
+}
 
 /* problem -> data -> method -> result breakdown on project cards */
 .card .pdmr { margin: 0 0 14px; flex: 1; font-size: 0.93rem; }
@@ -345,7 +376,6 @@ section + section { border-top: 1px solid var(--border); }
   .card .pdmr div { grid-template-columns: 1fr; gap: 2px; }
   .card .pdmr dt { padding-top: 0; }
 }
-.card.card-featured { grid-column: 1 / -1; }
 
 /* linkable project cards (projects.html#devtom etc.) */
 .card[id] { scroll-margin-top: 88px; }
